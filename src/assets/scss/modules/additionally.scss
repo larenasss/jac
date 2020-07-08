@@ -3,6 +3,10 @@
   margin-left: -9px;
   margin-right: -9px;
 
+  @include net-book {
+    flex-flow: wrap;
+  }
+
   @include tablets {
     flex-wrap: wrap;
 
@@ -17,6 +21,14 @@
 .additionally__item {
   width: 18%;
   padding: 0 9px 9px 9px;
+
+  @include net-book {
+    width: 25%;
+
+    &:nth-child(n+5) {
+      padding: 9px;
+    }
+  }
 
   @include tablets {
     width: 32%;

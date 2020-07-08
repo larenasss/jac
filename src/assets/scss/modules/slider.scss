@@ -54,6 +54,7 @@
   background-color: #292929;
   opacity: 1;
   margin: 0 5px;
+  outline: none;
 }
 
 .swiper-pagination-bullet-active {
@@ -63,8 +64,12 @@
 .slider-button {
   position: absolute;
   z-index: 10;
-  bottom: -15px;
+  bottom: -14px;
   right: 3.5%;
+
+  &--min {
+    bottom: -19px;
+  }
 
   &--cart {
     top: 10px;

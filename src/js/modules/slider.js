@@ -14,6 +14,7 @@ $(document).ready(function () {
     speed: 500,
     pagination: {
       el: '.swiper-pagination-one',
+      clickable: true,
     },
    // autoplay:{
      // delay: 3000
