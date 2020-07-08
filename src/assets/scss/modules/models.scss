@@ -1,0 +1,22 @@
+.models__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.models__list li {
+  width: 30%;
+  margin: 0 18px 35px 0;
+  box-shadow: 0 0 4px 0 rgba(19, 19, 19, 0.44);
+
+  &:nth-child(3n+3) {
+    margin: 0 0 35px 0;
+  }
+}
+
+.models__list li img {
+  width: 100%;
+}
+
+.models__title {
+  padding: 25px 17px;
+}

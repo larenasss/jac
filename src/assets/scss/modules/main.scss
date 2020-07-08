@@ -1,0 +1,32 @@
+.main__list {
+  margin-bottom: 110px;
+}
+
+.main__maps img {
+  width: 100%;
+}
+
+.main__certificate ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include tablets {
+    justify-content: center;
+  }
+}
+
+.main__certificate ul li {
+  padding: 0 40px 40px 0;
+  box-sizing: content-box;
+
+  @include tablets {
+    width: 34%;
+    padding: 0;
+  }
+}
+
+.main__certificate ul li img {
+  @include tablets {
+    margin: 0 auto;
+  }
+}

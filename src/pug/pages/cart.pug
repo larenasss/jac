@@ -1,0 +1,280 @@
+include ../utils/mixins
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title JAC
+.wrapper
+  .maincontent
+    include ../includes/sidebar
+    .container
+      header.header.header--cart.header--no-size 
+        h2.title.title--header CPDC15 (10т)
+      .page-content
+        .breadcrumb
+          ul.breadcrumb__list
+            li.breadcrumb__item
+              a(href="").breadcrumb__link Главная - 
+            li.breadcrumb__item.breadcrumb__item--active 
+              a(href="").breadcrumb__link Каталог - 
+            li.breadcrumb__item.breadcrumb__item--active 
+              a(href="").breadcrumb__link Автопогрузчики -
+            li.breadcrumb__item.breadcrumb__item--active
+              a(href="").breadcrumb__link CPDC15
+        section.section.cart
+          .cart__content
+            .cart__header
+              .cart__header-left
+                .cart__header-pic
+                  +image('content/cart_item.png', 'cart__header-img')
+                .cart__header-paginations
+              .cart__header-right
+                .cart__header-title Спецификация:
+                ul.description-list.description-list--min-margin
+                  li.description-list__item
+                    .description-list__title Модель:
+                    .description-list__desc.description-list__desc--text-left CPQD
+                  li.description-list__item
+                    .description-list__title Грузоподъемность:
+                    .description-list__desc.description-list__desc--text-left 1т
+                  li.description-list__item
+                    .description-list__title Двигатель:
+                    .description-list__desc.description-list__desc--text-left Двигатели марок Nissan
+                  li.description-list__item
+                    .description-list__title Коробка передач:
+                    .description-list__desc.description-list__desc--text-left Гидравлика/автоматика
+                      br
+                      | ( технология ТСМ )
+                  li.description-list__item
+                    .description-list__title Высота мачты:
+                    .description-list__desc.description-list__desc--text-left  3000мм
+                  li.description-list__item
+                    .description-list__title Номинальная грузоподъемность:
+                    .description-list__desc.description-list__desc--text-left  1000кг
+                  li.description-list__item
+                    .description-list__title Опционная мачта:
+                    .description-list__desc.description-list__desc--text-left  4,5 ; 6м
+                .cart__header-btn
+                  button.btn Получить кп
+                  button.btn.btn--no-bg Рассчитать в лизинг
+            .cart__body
+              h3.item-title.item-title--cart.item-title--big-size Технические характеристики:
+              .cart__body-content
+                .cart__body-left
+                  ul.cart__body-list
+                    li.cart__body-item
+                      ul.description-list
+                        li.description-list__item
+                          .description-list__title Центр тяжести груза:
+                          .description-list__desc 500 mm
+                        li.description-list__item
+                          .description-list__title Высота подъема мачты:
+                          .description-list__desc 3000 mm
+                        li.description-list__item
+                          .description-list__title Свободный ход мачты:
+                          .description-list__desc 155 mm
+                        li.description-list__item
+                          .description-list__title Угол наклона мачты (вперед-назад):
+                          .description-list__desc 6°/ 12°
+                        li.description-list__item
+                          .description-list__title Длинна вил:
+                          .description-list__desc 770 mm
+                        li.description-list__item
+                          .description-list__title Ширина:
+                          .description-list__desc 1070 mm
+                        li.description-list__item
+                          .description-list__title Высота (по защищенной крыше):
+                          .description-list__desc 2070 mm
+                        li.description-list__item
+                          .description-list__title Скорость движения с грузом:
+                          .description-list__desc 13.5 км/ч
+                        li.description-list__item
+                          .description-list__title Радиус поворота:
+                          .description-list__desc 1880 mm
+                        li.description-list__item
+                          .description-list__title Скорость подъема мачты (под нагрузкой):
+                          .description-list__desc 590 мм/с
+                        li.description-list__item
+                          .description-list__title Масса:
+                          .description-list__desc 2220 кг
+                    li.cart__body-item
+                      .cart__body-title Внешние размеры:
+                      ul.description-list
+                        li.description-list__item
+                          .description-list__title Длинна (без вил):
+                          .description-list__desc 500 mm
+                        li.description-list__item
+                          .description-list__title Высота выдвинутой мачты:
+                          .description-list__desc 4030 мм
+                        li.description-list__item
+                          .description-list__title Передний свес:
+                          .description-list__desc 421 мм
+                .cart__body-right
+                  ul.cart__body-list
+                    li.cart__body-item
+                      ul.description-list
+                        li.description-list__item
+                          .description-list__title Длинна (без вил):
+                          .description-list__desc 500 mm
+                        li.description-list__item
+                          .description-list__title Высота выдвинутой мачты:
+                          .description-list__desc 4030 мм
+                        li.description-list__item
+                          .description-list__title Передний свес:
+                          .description-list__desc 421 мм
+                    li.cart__body-item
+                      .cart__body-title Ширина протектора:
+                      ul.description-list
+                        li.description-list__item
+                          .description-list__title Передние шины:
+                          .description-list__desc 6.50-1 0-1 ОРЯ
+                        li.description-list__item
+                          .description-list__title Задние шины:
+                          .description-list__desc 5.00-8-1 ОРП
+                        li.description-list__item
+                          .description-list__title Колёсная база:
+                          .description-list__desc 1 400 мм
+                        li.description-list__item
+                          .description-list__title Колея передняя:
+                          .description-list__desc 890 мм
+                        li.description-list__item
+                          .description-list__title Колея задняя:
+                          .description-list__desc 920 мм
+                        li.description-list__item
+                          .description-list__title Дорожны просвет:
+                          .description-list__desc 11.5мм
+                    li.cart__body-item
+                      .cart__body-title Двигатель:
+                      ul.description-list
+                        li.description-list__item
+                          .description-list__title Модель:
+                          .description-list__desc <Зиапр1пд4У
+                        li.description-list__item
+                          .description-list__title Число оборотов двигателя:
+                          .description-list__desc 159 об/мин
+                        li.description-list__item
+                          .description-list__title Номинальная мощность:
+                          .description-list__desc 35.7 кВт
+          .cart__additionally
+            h3.item-title.item-title--cart.item-title--big-size Дополнительное оборудование
+            ul.additionally
+              li.additionally__item
+                .additionally__pic
+                  +image('content/additionally_item.png', 'additionally__img')
+                a(href="").additionally__desc Кабина с отоплением
+              li.additionally__item
+                .additionally__pic
+                  +image('content/additionally_item.png', 'additionally__img')
+                a(href="").additionally__desc Кабина с отоплением
+              li.additionally__item
+                .additionally__pic
+                  +image('content/additionally_item.png', 'additionally__img')
+                a(href="").additionally__desc Кабина с отоплением
+              li.additionally__item
+                .additionally__pic
+                  +image('content/additionally_item.png', 'additionally__img')
+                a(href="").additionally__desc Кабина с отоплением
+              li.additionally__item
+                .additionally__pic
+                  +image('content/additionally_item.png', 'additionally__img')
+                a(href="").additionally__desc Кабина с отоплением
+          .cart__recommendations
+            h3.item-title.item-title--cart.item-title--big-size Рекомендованные позиции
+            ul.equipment.equipment--cart
+              li.active
+                .equipment__content
+                  .equipment__body
+                    +image('content/catalog_item_1.png', 'equipment__img')
+                  .equipment__footer
+                    .equipment__footer-body
+                      .equipment__title.equipment__title--cart CPCD 15 H (10т)
+                      .equipment__subtitle (Дизельный, 1.5л)
+                    .equipment__btn.equipment__btn--cart
+                      button.btn.btn--width-big Подробнее
+              li
+                .equipment__content
+                  .equipment__body
+                    +image('content/catalog_item_1.png', 'equipment__img')
+                  .equipment__footer
+                    .equipment__footer-body
+                      .equipment__title.equipment__title--cart CPCD 15 H (10т)
+                      .equipment__subtitle (Дизельный, 1.5л)
+                    .equipment__btn.equipment__btn--cart
+                      button.btn.btn--width-big Подробнее
+              li
+                .equipment__content
+                  .equipment__body
+                    +image('content/catalog_item_1.png', 'equipment__img')
+                  .equipment__footer
+                    .equipment__footer-body
+                      .equipment__title.equipment__title--cart CPCD 15 H (10т)
+                      .equipment__subtitle (Дизельный, 1.5л)
+                    .equipment__btn.equipment__btn--cart
+                      button.btn.btn--width-big Подробнее
+              li
+                .equipment__content
+                  .equipment__body
+                    +image('content/catalog_item_1.png', 'equipment__img')
+                  .equipment__footer
+                    .equipment__footer-body
+                      .equipment__title.equipment__title--cart CPCD 15 H (10т)
+                      .equipment__subtitle (Дизельный, 1.5л)
+                    .equipment__btn.equipment__btn--cart
+                      button.btn.btn--width-big Подробнее
+            .slider-button.slider-button--cart
+              button.slider-button__item.slider-button__item--prev
+              button.slider-button__item.slider-button__item--next
+          .cart__questions
+            h3.item-title.item-title--cart.item-title--big-size Ответы на вопросы
+            ul.questions
+              li.questions__item
+                .questions__title Какие двигатели используются
+                input(type="checkbox" id='a1').questions__checkbox
+                label(for="a1")
+                .questions__desc
+                  p Двигатели Jac, Isuzu, Perkins, Nissan, Mitsubishi и другие.
+              li.questions__item
+                .questions__title Гарантия
+                input(type="checkbox" id='a2').questions__checkbox
+                label(for="a2")
+                .questions__desc
+                  p Двигатели Jac, Isuzu, Perkins, Nissan, Mitsubishi и другие.
+              li.questions__item
+                .questions__title Прохождение ТО
+                input(type="checkbox" id='a3').questions__checkbox
+                label(for="a3")
+                .questions__desc
+                  p Двигатели Jac, Isuzu, Perkins, Nissan, Mitsubishi и другие.
+              li.questions__item
+                .questions__title Лизинг
+                input(type="checkbox" id='a4').questions__checkbox
+                label(for="a4")
+                .questions__desc
+                  p Двигатели Jac, Isuzu, Perkins, Nissan, Mitsubishi и другие.
+              li.questions__item
+                .questions__title Доставка
+                input(type="checkbox" id='a5').questions__checkbox
+                label(for="a5")
+                .questions__desc
+                  p Двигатели Jac, Isuzu, Perkins, Nissan, Mitsubishi и другие.
+              li.questions__item
+                .questions__title Какое дополнительное оборудование можно установить?
+                input(type="checkbox" id='a6').questions__checkbox
+                label(for="a6")
+                .questions__desc
+                  p Двигатели Jac, Isuzu, Perkins, Nissan, Mitsubishi и другие.
+              li.questions__item
+                .questions__title Качественная ли техника?
+                input(type="checkbox" id='a7').questions__checkbox
+                label(for="a7")
+                .questions__desc
+                  p Двигатели Jac, Isuzu, Perkins, Nissan, Mitsubishi и другие.
+  include ../includes/footer
+                
+                
+
+
+

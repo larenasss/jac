@@ -1,0 +1,157 @@
+.form-calc {
+  display: flex;
+  box-shadow: 0 0 3px 0 rgba(19, 19, 19, 0.23);
+
+  & .input {
+    max-width: none;
+  }
+
+  & .btn {
+    max-width: none;
+  }
+
+  &--leasing {
+
+    & .form-calc__content {
+      justify-content: stretch;
+    }
+
+    & .form-calc__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    & .form-calc__list li {
+      width: 48%;
+
+      &:nth-child(n+2) {
+        margin-bottom: 0;
+      }
+    }
+
+    & .form-calc__item:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    & .form-calc__item:first-child {
+      margin-bottom: 28px;
+    }
+  }
+
+  @include laptop {
+    flex-direction: column-reverse;
+  }
+}
+
+.form-calc__filter {
+  padding: 40px 0 30px 0;
+  margin-bottom: 30px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    background: url("../../img/content/border.png");
+    background-repeat: no-repeat;
+    max-width: 400px;
+    width: 100%;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.form-calc__desc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-calc__desc p {
+  width: 60%;
+}
+
+.form-calc__link {
+  color: #ed1c24;
+}
+
+.form-calc__link a {
+  font-size: 18px;
+  font-weight: 900;
+  display: block;
+  margin-bottom: 10px;
+  line-height: 1.38;
+}
+
+.form-calc__link div {
+  font-size: 12px;
+}
+
+.form-calc__select {
+  padding: 20px 12px;
+  background-color: #f0f0f0;
+}
+
+.form-calc__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+
+  @include desktopHd {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+}
+
+.form-calc__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include desktopHd {
+    justify-content: center;
+  }
+
+  @include laptop {
+    width: 100%;
+  }
+}
+
+.form-calc__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.form-calc__content, .form-calc__pic {
+  width: 50%;
+}
+
+.form-calc__content {
+  padding: 30px;
+}
+
+.form-calc__pic {
+
+  &--leasing {
+    input {
+      background-color: #ffffff;
+    }
+
+    & .select-calc {
+      background-color: #ffffff;
+    }
+  }
+
+  @include laptop {
+    width: 100%;
+  }
+}
+
+.form-calc__pic img {
+  width: 100%;
+  max-height: 650px;
+
+  @include desktopHd {
+    max-height: 450px;
+  }
+}

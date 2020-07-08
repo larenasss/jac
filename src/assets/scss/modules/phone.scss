@@ -1,0 +1,31 @@
+.phone {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone__link {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.19px;
+  margin-bottom: 8px;
+
+  &--size-22 {
+    font-size: 22px;
+  }
+
+  @include laptop {
+    font-size: 16px;
+  }
+}
+
+.phone span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #6d6d6d;
+  text-transform: uppercase;
+
+  @include laptop {
+    font-size: 10px;
+  }
+}
+

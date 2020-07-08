@@ -1,0 +1,222 @@
+include ../utils/mixins
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title JAC
+.wrapper
+  .maincontent
+    include ../includes/sidebar
+    .container
+      header.header.header--margin
+        +image('content/main_bg.png', 'header__img')
+        .header__body.header__body.center
+          .header__logo
+            +image('content/logo-header.png', '')
+          .header__desc
+            h2.title.title--header Более 200 единиц складской техники с ПСМ
+              br
+              | всегда в наличии и готовы к отгрузке
+      .page-content
+        h3.item-title Рекомендованные позиции
+        .main
+          .main__list
+            ul.list-item
+              li
+                .list-item__pic
+                  +image('content/menu-item-1.png', '')
+                .list-item__desc
+                  span Автопогрузчики
+                  a(href="").list-item__link
+              li
+                .list-item__pic
+                  +image('content/menu-item-2.png', '')
+                .list-item__desc
+                  span Электропогрузчики
+                  a(href="").list-item__link
+              li
+                .list-item__pic
+                  +image('content/menu-item-1.png', '')
+                .list-item__desc
+                  span Погрузчики
+                  a(href="").list-item__link
+              li
+                .list-item__pic
+                  +image('content/menu-item-3.png', '')
+                .list-item__desc
+                  span Техника для склада
+                  a(href="").list-item__link
+              li
+                .list-item__pic
+                  +image('content/menu-item-4.png', '')
+                .list-item__desc
+                  span Доп. оборудование
+                  a(href="").list-item__link
+              li
+                .list-item__pic
+                  +image('content/menu-item-5.png', '')
+                .list-item__desc
+                  span оборудование 
+                  a(href="").list-item__link
+          .main__filter
+            .form-filter
+              .form-filter__left
+                .form-filter__title Соберите свой погрузчик
+                .form-filter__pic
+                  .slider
+                    .swiper-container.swiper-container-one
+                      .swiper-wrapper
+                        .swiper-slide
+                          +image('content/filter-item-1.png', '')
+                    .slider-button
+                      button.slider-button__item.slider-button__item--prev.prev-one
+                      button.slider-button__item.slider-button__item--next.next-one
+                  button.form-filter-360
+              .form-filter__right
+                form(action="").form-filter__form
+                  .form-filter__content
+                    .form-filter__block
+                      .form-filter__block-title ТИП погрузчика
+                      .form-filter__inputs
+                        label
+                          input(type="checkbox")
+                          .form-filter__checkbox
+                          .form-filter__inputs-title Дизельный  
+                        label
+                          input(type="checkbox")
+                          .form-filter__checkbox
+                          .form-filter__inputs-title Газобензиновый   
+                        label
+                          input(type="checkbox")
+                          .form-filter__checkbox
+                          .form-filter__inputs-title Электрический
+                    .form-filter__block  
+                      .form-filter__block-title Грузоподьемность
+                      .form-filter__inputs
+                        label
+                          input(type="checkbox")
+                          .form-filter__checkbox
+                          .form-filter__inputs-title до 1500 кг  
+                        label
+                          input(type="checkbox")
+                          .form-filter__checkbox
+                          .form-filter__inputs-title до 1800 кг   
+                        label
+                          input(type="checkbox")
+                          .form-filter__checkbox
+                          .form-filter__inputs-title до 2000  
+                    .form-filter__block  
+                      .form-filter__block-title Высота подъема груза (мм)
+                      .form-filter__inputs
+                        label
+                          input(type="checkbox")
+                          .form-filter__checkbox
+                          .form-filter__inputs-title 3000  
+                        label
+                          input(type="checkbox")
+                          .form-filter__checkbox
+                          .form-filter__inputs-title 4000  
+                        label
+                          input(type="checkbox")
+                          .form-filter__checkbox
+                          .form-filter__inputs-title 4500 
+                        label
+                          input(type="checkbox")
+                          .form-filter__checkbox
+                          .form-filter__inputs-title Другая 
+                    .form-filter__block  
+                      .form-filter__block-title Будете ли загружать вагоны/фуры
+                      .form-filter__inputs
+                        label
+                          input(type="checkbox")
+                          .form-filter__checkbox
+                          .form-filter__inputs-title Да  
+                        label
+                          input(type="checkbox")
+                          .form-filter__checkbox
+                          .form-filter__inputs-title Нет  
+                    .form-filter__block  
+                      .form-filter__block-title Нужно ли боковое смещение каретки
+                      .form-filter__inputs
+                        label
+                          input(type="checkbox")
+                          .form-filter__checkbox
+                          .form-filter__inputs-title Да  
+                        label
+                          input(type="checkbox")
+                          .form-filter__checkbox
+                          .form-filter__inputs-title Нет  
+          section.section.request
+            .request__content
+              form.request__form(action="")
+                  input(type="text", placeholder="Ваше имя").input  
+                  input(type="text", placeholder="Ваш телефон").input
+                  button(type="submit").btn.btn--request Оставить заявку       
+          section.section
+            ul.list-info.list-info--main
+                li.list-info__item.list-info__item--reverse
+                  .list-info__content
+                    .list-info__desc
+                      h3.item-title О компании
+                      ul.list-red-cub
+                        li(data-index='1') Китайская государственная компания. Официальный поставщик техники для армии КНР
+                        li(data-index='2') Техника соответствуют европейским нормам и успешно продается в Европе
+                        li(data-index='3') ТОП 1 на внутреннем рынке Китая и топ 3 на рынке РФ
+                        li(data-index='4') Выпускают полную гамму автомобилей. Легковые и грузовые автомобили, электромобили, спецтехника и запчасти
+                      button.btn Подробнее
+                    .list-info__pic
+                      +image('content/main-list-1.png', 'list-info__img')
+                li.list-info__item
+                  .list-info__content
+                    .list-info__pic
+                      +image('content/main-list-2.png', 'list-info__img')
+                    .list-info__desc
+                      h3.item-title Сервис и гарантия
+                      ul.list-red-cub
+                        li(data-index='1') Гарантия на погрузчики 5 лет или 4000 моточасов
+                        li(data-index='2') Выездные сервисные службы во всех регионах РФ
+                        li(data-index='3') Склад оригинальных запчастей на сумму более 148.000.000 рублей
+                        li(data-index='4') Квалифицированные сервисные бригады. Выезд в течении 24 часов после заявки
+                      button.btn Подробнее
+                li.list-info__item.list-info__item--reverse
+                  .list-info__content
+                    .list-info__desc
+                      h3.item-title Доставка
+                      ul.list-red-cub
+                        li(data-index='1') Доставка до вашего склада, в среднем от 2-4 дней
+                        li(data-index='2') Цена доставки ниже на 50% чем в транспортной компании
+                        li(data-index='3') Различные варианты оплаты, рассрочка, тест драйв
+                        li(data-index='4') Лизинг от 48 компаний. Ставка от 10%
+                      button.btn Подробнее
+                    .list-info__pic
+                      +image('content/main-list-3.png', 'list-info__img')
+          section.section.main__maps
+            h3.item-title Техника находится в наличии на складах 
+            +image('content/main-maps.png', '')
+          section.section.main__certificate
+            h3.item-title Сертификаты
+            ul
+              li
+                +image('content/list-sertf.png', '')
+              li
+                +image('content/list-sertf.png', '')
+              li
+                +image('content/list-sertf.png', '')
+              li
+                +image('content/list-sertf.png', '')
+              li
+                +image('content/list-sertf.png', '')
+              li
+                +image('content/list-sertf.png', '')
+          section.section.request
+            h2.request__title.request__title--size-34 ОСТАЛИСЬ ВОПРОСЫ?
+              .request__sub-title ОСТАВЬТЕ ЗАЯВКУ И МЫ НА НИХ ОТВЕТИМ
+            .request__content
+              form.request__form(action="")
+                  input(type="text", placeholder="Ваше имя").input  
+                  input(type="text", placeholder="Ваш телефон").input
+                  button(type="submit").btn.btn--request Оставить заявку  
+  include ../includes/footer

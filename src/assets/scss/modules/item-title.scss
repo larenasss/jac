@@ -1,0 +1,61 @@
+.item-title {
+  margin-bottom: 25px;
+  font-size: 56px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #ed1c24;
+  width: fit-content;
+
+  @include desktopHd {
+    font-size: 34px;
+  }
+
+  @include laptop {
+    margin-bottom: 20px;
+  }
+  
+  @include tablets {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  &--no-style {
+    border: none;
+    margin: 0 !important;
+    display: block;
+  }
+
+  &--center {
+    display: block;
+    text-align: center;
+    border-bottom: none;
+  }
+
+  &--size-26px {
+    font-size: 34px;
+
+    @include desktopHd {
+      font-size: 26px;
+    }
+  }
+
+  &--size-20px {
+    font-size: 30px;
+
+    @include desktopHd {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &--center {
+    text-align: center;
+    width: auto;
+  }
+}
+
+.item-title-box {
+  display: inline-flex;
+}

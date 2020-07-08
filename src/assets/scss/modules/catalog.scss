@@ -1,0 +1,25 @@
+.catalog__filter {
+  background-color: #f9f9f9;
+  padding: 20px 27px;
+  margin-bottom: 35px;
+}
+
+.catalog__body {
+  margin-bottom: 56px;
+
+  @include tablets {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.catalog__paginations {
+  display: flex;
+  justify-content: flex-end;
+
+  @include tablets {
+    justify-content: center;
+  }
+}
+
+

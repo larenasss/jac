@@ -1,0 +1,53 @@
+.tender__slider {
+  display: flex;
+}
+
+.tender__title {
+  font-family: Akzidenz-Grotesk;
+  opacity: .1;
+  font-size: 54px;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin-right: 20px;
+  margin-left: -2px;
+}
+
+.tender__content .list-info__desc {
+  margin-top: 0;
+}
+
+.tender__content .slider {
+  margin-bottom: 20px;
+
+  @include net-book {
+    .swiper-slide {
+      height: auto;
+    }
+
+    .list-info__pic {
+      height: 100%;
+    }
+  }
+
+}
+
+.tender__content .list-info__item {
+  width: 100%;
+}
+
+.tender__content .list-info__content {
+
+  @include net-book {
+    flex-direction: column;
+    height: 100%;
+
+    .list-info__desc {
+      width: 100%;
+    }
+
+    .list-info__pic {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.btn {
+  width: 100%;
+  background-color: #ed1c24;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 16px;
+  max-width: 300px;
+  height: 62px;
+
+  @include desktopHd {
+    font-size: 14px;
+    max-width: 210px;
+    height: 42px;
+  }
+
+  @include laptop {
+    font-size: 10px;
+  }
+
+  &--width-big {
+    width: 100% !important;
+  }
+
+  &--no-bg {
+    border: solid 2px #ed1c24;
+    color: #ed1c24;
+    background-color: #ffffff;
+    margin-left: 30px;
+  }
+}

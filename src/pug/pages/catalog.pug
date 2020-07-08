@@ -1,0 +1,68 @@
+include ../utils/mixins
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title JAC
+.wrapper
+  .maincontent
+    include ../includes/sidebar
+    .container
+      header.header.header--no-size
+        +image('content/catalog_bg_header.png', 'header__img')
+        .header__body
+          .header__desc.header__desc--no-margin
+            h2.title.title--header Каталог
+      .page-content
+        .breadcrumb
+          ul.breadcrumb__list
+            li.breadcrumb__item 
+              a(href="").breadcrumb__link Главная - 
+            li.breadcrumb__item.breadcrumb__item--active 
+              a(href="").breadcrumb__link Каталог - 
+            li.breadcrumb__item.breadcrumb__item--active 
+              a(href="").breadcrumb__link Автопогрузчики
+        section.catalog
+          .catalog__content
+            ul.equipment.equipment--catalog
+              li
+                .equipment__content
+                  .equipment__body
+                    +image('content/menu-item-1.png', 'equipment__img')
+                  .equipment__footer
+                    .equipment__title АВТОПОГРУЗЧИКИ
+                    .equipment__sub-title Бензиновые и дизельные вилочные погрузчики
+                    .equipment__btn
+                      button.btn.btn--width-big Подробнее
+              li
+                .equipment__content
+                  .equipment__body
+                    +image('content/menu-item-2.png', 'equipment__img')
+                  .equipment__footer
+                    .equipment__title ЭЛЕКТРОПОГРУЗЧИКИ
+                    .equipment__sub-title Бензиновые и дизельные вилочные погрузчики
+                    .equipment__btn
+                      button.btn.btn--width-big Подробнее
+              li
+                .equipment__content
+                  .equipment__body
+                    +image('content/menu-item-3.png', 'equipment__img')
+                  .equipment__footer
+                    .equipment__title ТЕХНИКА ДЛЯ СКЛАДА
+                    .equipment__sub-title Бензиновые и дизельные вилочные погрузчики
+                    .equipment__btn
+                      button.btn.btn--width-big Подробнее
+              li
+                .equipment__content
+                  .equipment__body
+                    +image('content/menu-item-5.png', 'equipment__img')
+                  .equipment__footer
+                    .equipment__title ДОПОЛНИТЕЛЬНОЕ ОБОРУДОВАНИЕ
+                    .equipment__sub-title Бензиновые и дизельные вилочные погрузчики
+                    .equipment__btn
+                      button.btn.btn--width-big Подробнее
+  include ../includes/footer
+

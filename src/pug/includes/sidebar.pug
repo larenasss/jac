@@ -1,0 +1,39 @@
+.sidebar
+  .sidebar__content
+    .sidebar__top
+      .sidebar__logo
+        .logo
+          +image('content/logo.png', 'logo__img')
+      ul.sidebar__list
+        li.sideber__item 
+          a(href="./main.html").sidebar__link Главная
+        li.sideber__item 
+          a(href="./catalog.html").sidebar__link Каталог
+        li.sideber__item
+          a(href="./company.html").sidebar__link О Компании
+        li.sideber__item 
+          a(href="./guarantee.html").sidebar__link Сервис и гарантии
+        li.sideber__item 
+          a(href="./delivery.html").sidebar__link Оплата и доставка
+        li.sideber__item 
+          a(href="./leasing.html").sidebar__link Лизинг
+        li.sideber__item 
+          a(href="./tender.html").sidebar__link Тендерный отдел
+        li.sideber__item 
+          a(href="./testDrive.html").sidebar__link Тест-драйв
+      .sidebar__selected
+        select(name="").select-sity
+          option(value="") Наши склады
+          option(value="") Кемерово
+          option(value="") Кемерово
+          option(value="") Кемерово
+          option(value="") Кемерово
+          option(value="") Кемерово
+          option(value="") Кемерово
+    .sidebar__bottom
+      .sidebar__contacts
+        .phone
+          a.phone__link(href="tel:+78002509946") 8 800 250 9946
+          span звонок бесплатный
+      .sidebar__btn
+        button.btn Заказать звонок

@@ -1,0 +1,43 @@
+.description-list__item {
+  display: flex;
+}
+
+.description-list {
+  margin-bottom: 70px;
+
+  @include tablets {
+    margin-bottom: 30px;
+  }
+
+  &--min-margin {
+    margin-bottom: 40px;
+  }
+}
+
+.description-list__item {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f3f3f3;
+
+  &:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.description-list__title, .description-list__desc {
+  width: 50%;
+}
+
+.description-list__title {
+  font-weight: bold;
+}
+
+.description-list__desc {
+  text-align: end;
+
+  &--text-left {
+    text-align: start;
+  }
+}

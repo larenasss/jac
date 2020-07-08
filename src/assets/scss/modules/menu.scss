@@ -1,0 +1,27 @@
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.menu li {
+  width: 50%;
+  font-weight: 500;
+  display: flex;
+
+  @include tablets {
+    width: 100%;
+    text-align: center;
+  }
+
+  &:hover {
+    color: #ed1c24;
+    transition: .5s;
+  }
+}
+
+.menu li::before {
+  content: "-";
+  margin-right: 5px;
+}

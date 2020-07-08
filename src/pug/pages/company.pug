@@ -1,0 +1,276 @@
+include ../utils/mixins
+
+<!DOCTYPE html>
+html(lang="ru_RU")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title JAC
+.wrapper
+  .maincontent
+    include ../includes/sidebar
+    .container
+      header.header
+        +image('content/company_bg_header.png', 'header__img')
+        .header__body
+          .header__desc
+            h2.title.title--header.title--color-span Спецтехнику марки
+              span  jac
+              |  выбирают
+              br
+              | крупные международные компании 
+        .header__info
+          ul.info
+            li.info__item
+              .info__item-pic
+                +image('icons/gear.png', 'info__item-img')
+              .info__item-desc
+                p 7 складов в РФ
+            li.info__item
+              .info__item-pic
+                +image('icons/list.png', 'info__item-img')
+              .info__item-desc
+                p Гарантия до 5 лет
+            li.info__item
+              .info__item-pic
+                +image('icons/shield.png', 'info__item-img')
+              .info__item-desc
+                p Реализованно 10.000 погрузчиков 
+      .page-content
+        .breadcrumb
+          ul.breadcrumb__list
+            li.breadcrumb__item 
+              a(href="").breadcrumb__link Главная - 
+            li.breadcrumb__item.breadcrumb__item--active 
+              a(href="").breadcrumb__link О компании
+        .company
+          .sub-menu
+            ul.sub-menu__list
+              li.sub-menu__item Представительство JAC в РФ
+              li
+                a(href="#sr1").scroll-to Наши склады
+              li
+                a(href="#sr2").scroll-to Спецтехнику JAC выбирают
+              li
+                a(href="#sr3").scroll-to Кто использует
+              li
+                a(href="#sr4").scroll-to Техническое обслуживание
+              li
+                a(href="#sr5").scroll-to Склад запасных частей
+              li.sub-menu__item О компании Jac
+              li
+                a(href="#sr6").scroll-to Постгарантийное обслуживание
+              li
+                a(href="#sr7").scroll-to О производителе
+              li
+                a(href="#sr8").scroll-to JAC производит
+          .section-right
+            .section-margin
+              ul.list-info.list-info--width-50
+                li.list-info__item
+                  .list-info__content
+                    .list-info__pic
+                      .slider
+                        .swiper-container.swiper-container-one
+                          .swiper-wrapper
+                            .swiper-slide
+                              +image('content/company_bg_list_1.png', 'list-info__img')
+                            .swiper-slide
+                              +image('content/company_bg_list_1.png', 'list-info__img')
+                            .swiper-slide
+                              +image('content/company_bg_list_1.png', 'list-info__img')
+                            .swiper-slide
+                              +image('content/company_bg_list_1.png', 'list-info__img')
+                        .slider-button
+                          button.slider-button__item.slider-button__item--prev.prev-one
+                          button.slider-button__item.slider-button__item--next.next-one
+                        .slider__paginations
+                          .swiper-pagination.swiper-pagination-one
+                    .list-info__desc
+                      h3.item-title.item-title--size-26px#sr1 НАШИ СКЛАДЫ
+                      ul.list-red-cub.list-red-cub--content-center
+                        li(data-index='1') Склады располагаются в городах: Москва, Уфа, Набережные Челны, Иркутск, Барнаул, Кемерово.
+                        li(data-index='2') При заказе погрузчика мы отправим его вам с ближайшего склада. 
+                        li(data-index='3') Это сократит время и стоимость доставки. При желании поможем с погрузкой и выгрузкой техники в автомобиль
+            h3.item-title.item-title--size-26px#sr2 СПЕЦТЕХНИКУ JAC ВЫБИРАЮТ
+            .section-margin
+              ul.list-info.list-info--width-50
+                li.list-info__item
+                  .list-info__content
+                    .list-info__pic
+                      .slider
+                        .swiper-container.swiper-container-two
+                          .swiper-wrapper
+                            .swiper-slide
+                              +image('content/company_bg_list_2.png', 'list-info__img')
+                            .swiper-slide
+                              +image('content/company_bg_list_2.png', 'list-info__img')
+                            .swiper-slide
+                              +image('content/company_bg_list_2.png', 'list-info__img')
+                            .swiper-slide
+                              +image('content/company_bg_list_2.png', 'list-info__img')
+                        .slider-button
+                          button.slider-button__item.slider-button__item--prev.prev-two
+                          button.slider-button__item.slider-button__item--next.next-two
+                        .slider__paginations
+                          .swiper-pagination.swiper-pagination-two
+                    .list-info__desc
+                      h3.item-title.item-title--size-20px FORMULA-1
+                      div
+                        P FORMULA-1 - Спецтехника китайской марки JAC была задействована на российском этапе Гран-при «Формулы-1», проходившем в Сочи.
+                        .list-info__logo
+                          +image('content/logo_f1.png', '')
+                li.list-info__item
+                  .list-info__content
+                    .list-info__pic
+                      .slider
+                        .swiper-container.swiper-container-three
+                          .swiper-wrapper
+                            .swiper-slide
+                              +image('content/company_bg_list_3.png', 'list-info__img')
+                            .swiper-slide
+                              +image('content/company_bg_list_3.png', 'list-info__img')
+                            .swiper-slide
+                              +image('content/company_bg_list_3.png', 'list-info__img')
+                            .swiper-slide
+                              +image('content/company_bg_list_3.png', 'list-info__img')
+                        .slider-button
+                          button.slider-button__item.slider-button__item--prev.prev-three
+                          button.slider-button__item.slider-button__item--next.next-three
+                        .slider__paginations
+                          .swiper-pagination.swiper-pagination-three
+                    .list-info__desc
+                      h3.item-title.item-title--size-20px FIFA
+                      div
+                        P FIFA- Погрузчики JAC обслуживали фан-зону ЧМ по футболу FIFA 2018 во всех регионах. 
+                        .list-info__logo
+                          +image('content/logo_fifa.png', '')
+            h3.item-title.item-title--size-26px#sr3 ПОГРУЗЧИКИ JAC В РОССИИ УЖЕ ИСПОЛЬЗУЮТ
+            .section
+              .partners
+                ul.partners__list.partners__list--company
+                  li
+                    +image('content/logo_partners_1.png', '')
+                  li
+                    +image('content/logo_partners_2.png', '')
+                  li
+                    +image('content/logo_partners_3.png', '')
+                  li
+                    +image('content/logo_partners_4.png', '')
+                  li
+                    +image('content/logo_partners_5.png', '')
+                  li
+                    +image('content/logo_partners_6.png', '')
+            .section
+              ul.list-info.list-info--guarantee.list-info--width-50
+                li.list-info__item.list-info__item--reverse
+                  h3.item-title.item-title--size-26px#sr4 ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ
+                  .list-info__content
+                    .list-info__desc.list-info__desc--text
+                      Lorem ipsum dolor sit amet, 
+                      | consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    .list-info__pic
+                      +image('content/guarantee-list-2.png', 'list-info__img')
+                li.list-info__item.list-info__item--slider
+                  h3.item-title.item-title--size-26px#sr5 СКЛАД ЗАПАСНЫХ ЧАСТЕЙ
+                  .list-info__content
+                    .list-info__pic
+                      .slider
+                        .swiper-container.swiper-container-four
+                          .swiper-wrapper
+                            .swiper-slide
+                              +image('content/guarantee-list-1.png', 'list-info__img')
+                            .swiper-slide
+                              +image('content/guarantee-list-1.png', 'list-info__img')
+                            .swiper-slide
+                              +image('content/guarantee-list-1.png', 'list-info__img')
+                            .swiper-slide
+                              +image('content/guarantee-list-1.png', 'list-info__img')
+                        .slider-button
+                          button.slider-button__item.slider-button__item--prev.prev-four
+                          button.slider-button__item.slider-button__item--next.next-four
+                        .slider__paginations
+                          .swiper-pagination.swiper-pagination-four
+                    .list-info__desc.list-info__desc--text
+                      Lorem ipsum dolor sit amet, 
+                      | consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                li.list-info__item
+                  h3.item-title.item-title--size-26px#sr6 ПОСТГАРАНТИЙНОЕ ОБСЛУЖИВАНИЕ
+                  .list-info__content
+                    .list-info__pic
+                      +image('content/guarantee-list-3.png', 'list-info__img')
+                    .list-info__desc.list-info__desc--text
+                      Lorem ipsum dolor sit amet, 
+                      | consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                li.no-border
+                  h3.item-title.item-title--size-26px#sr7 О ПРОИЗВОДИТЕЛЕ
+                  .list-info__content
+                    .list-info__pic
+                      +image('content/company_bg_list_7.png', 'list-info__img')
+                      .list-info__brand
+                        h4 Бренд, рекомендованный для экспорта
+                        .list-info__brand-body
+                          p Награда «Бренд, рекомендованный для экспорта» является паспортом качества для китайских экспортных товаров.
+                          +image('content/company_bg_bottom_list_1.png', '')
+                    .list-info__desc.list-info__desc--text
+                      p 
+                        span Jac
+                        |  - это концерн предприятий, который объединяет в себе заводы по производству складской техники, легковые и грузовые автомобили, автобусы,  спецтехнику, а так же финансовый институт и научно исследовательский центр
+                      p - 50-летний опыт развития компании JAC позволил достичь мощности производства более 1 миллиона единиц автомобилей сполным циклом производства в год. 
+                      p Компания вошла в десятку крупнейших предприятий автомобильной отрасли в Китае.
+            .section
+              .slider
+                .swiper-container.swiper-container-five
+                  .swiper-wrapper
+                    .swiper-slide
+                      +image('content/slider_company_1.png', 'slider__item-img')
+                    .swiper-slide
+                      +image('content/slider_company_1.png', 'slider__item-img')
+                    .swiper-slide
+                      +image('content/slider_company_1.png', 'slider__item-img')
+                    .swiper-slide
+                      +image('content/slider_company_1.png', 'slider__item-img')
+                .slider-button
+                  button.slider-button__item.slider-button__item--prev.prev-five
+                  button.slider-button__item.slider-button__item--next.next-five
+                .slider__paginations
+                  .swiper-pagination.swiper-pagination-five
+            section.request
+              .request__title Оставьте заявку и мы подберем для вас погрузчик
+              .request__content
+                form.request__form(action="")
+                  button(type="submit").btn Оставить заявку
+            section.section.company__models
+              h3.item-title.item-title--no-style.item-title--size-26px#sr8 ГОСУДАРСТВЕННАЯ КОРПОРАЦИЯ
+              h3.item-title.item-title--size-26px JAC ПРОИЗВОДИТ
+              .models
+                ul.models__list
+                  li
+                    +image('content/company_item_1.png', '')
+                    .models__title Вилочные погрузчики
+                  li
+                    +image('content/company_item_2.png', '')
+                    .models__title Электромобили
+                  li
+                    +image('content/company_item_3.png', '')
+                    .models__title Малотонажные грузовики
+                  li
+                    +image('content/company_item_4.png', '')
+                    .models__title Крупнотонажные грузовики
+                  li
+                    +image('content/company_item_5.png', '')
+                    .models__title Минивэны
+                  li
+                    +image('content/company_item_6.png', '')
+                    .models__title Кроссоверы
+                  li
+                    +image('content/company_item_7.png', '')
+                    .models__title Легковые автомобили
+                  li
+                    +image('content/company_item_8.png', '')
+                    .models__title Малая складская техника
+                  li
+                    +image('content/company_item_9.png', '')
+                    .models__title Электротележки
+  include ../includes/footer

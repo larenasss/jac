@@ -1,0 +1,42 @@
+$bp-desktop-hd: 1921px;
+$bp-desktopHeight: 768px;
+$bp-desktop: 1400px;
+$bp-net-book: 1200px;
+$bp-laptop: 992px;
+$bp-tablets: 768px;
+
+@mixin desktopHeight {
+  @media only screen and (max-height: $bp-desktopHeight) {
+    @content;
+  }
+}
+
+@mixin desktopHd {
+  @media only screen and (max-width: $bp-desktop-hd) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (max-width: $bp-desktop) {
+    @content;
+  }
+}
+
+@mixin net-book {
+  @media only screen and (max-width: $bp-net-book) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media only screen and (max-width: $bp-laptop) {
+    @content;
+  }
+}
+
+@mixin tablets {
+  @media only screen and (max-width: $bp-tablets) {
+    @content;
+  }
+}

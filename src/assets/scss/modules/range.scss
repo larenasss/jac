@@ -1,0 +1,67 @@
+
+.range__body {
+  border: solid 1px #d2d2d2;
+  background-color: #f9f9f9;
+  padding: 16px 16px;
+  border-radius: 0;
+  color: #858585;
+  display: flex;
+  justify-content: space-between;
+
+  @include desktopHd {
+    padding: 12px 16px;
+  }
+}
+
+.range__value {
+  color: #353535;
+  font-weight: bold;
+}
+
+.range__positions {
+  display: flex;
+  justify-content: space-between;
+  color:#a9a9a9;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.noUi-target {
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  background: none;
+}
+
+.noUi-horizontal {
+  height: auto;
+}
+
+.noUi-connect {
+  background: #ed1c24;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 12px;
+  height: 12px;
+  border: 4px solid #ed1c24;
+  border-radius: 50%;
+  right: -5px;
+  top: -14px;
+  cursor: pointer;
+  outline: none;
+}
+ 
+.noUi-base, .noUi-connects {
+  height: 3px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  bottom: 10px;
+  left: 0;
+  border-radius: 0;
+}
+
+.noUi-handle:before, .noUi-handle:after {
+  display: none;
+}

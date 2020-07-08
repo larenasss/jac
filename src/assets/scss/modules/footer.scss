@@ -1,0 +1,59 @@
+.footer {
+  margin-top: 100px;
+  background-color: #ebebeb;
+  position: relative;
+  padding: 50px 20px 50px 0;
+  flex: 0 0 auto;
+
+  @include net-book {
+    margin-top: 50px;
+  }
+
+  @include tablets {
+    margin-top: 20px;
+    padding: 50px 20px;
+  }
+}
+
+.footer__office {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.footer__managers {
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.footer__bottom {
+  padding-top: 30px;
+  display: flex;
+}
+
+.footer__info {
+  width: 25%;
+}
+
+.footer__logo {
+  margin-bottom: 26px;
+}
+
+.footer__desc {
+  font-weight: 300;
+}
+
+.footer__menu {
+  padding: 0 45px;
+  width: 50%;
+
+  @include tablets {
+    padding: 0 20px;
+  }
+}
+
+.footer__mail {
+  margin-bottom: 34px;
+}
+
+

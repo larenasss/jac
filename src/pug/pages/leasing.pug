@@ -1,0 +1,184 @@
+include ../utils/mixins
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title JAC
+.wrapper
+  .maincontent
+    include ../includes/sidebar
+    .container
+      header.header
+        +image('content/leasing_bg_header.png', 'header__img')
+        .header__body
+          .header__desc
+            h2.title.title--header Вилочные погрузчики в лизинг
+              br
+              span  с авансом от 15%
+            h2.title.title--header Ставка по лизингу
+              span  от 10%
+        .header__info
+          ul.info.info--leasing
+            li.info__item
+              .info__item-pic
+                +image('icons/calendar.png', 'info__item-img')
+              .info__item-desc
+                p Решение по лизингу
+                  |
+                  br
+                  | за 3 дня
+            li.info__item
+              .info__item-pic
+                +image('icons/leasing_partners.png', 'info__item-img')
+              .info__item-desc
+                p 48 лицинзированных партнеров
+            li.info__item
+              .info__item-pic
+                +image('icons/escort.png', 'info__item-img')
+              .info__item-desc
+                p Полное сопровождение сделки
+      .page-content
+        .breadcrumb
+          ul.breadcrumb__list
+            li.breadcrumb__item 
+              a(href="").breadcrumb__link Главная - 
+            li.breadcrumb__item.breadcrumb__item--active 
+              a(href="").breadcrumb__link Условия лизинга
+        section.leasing
+          .sub-menu
+            ul.sub-menu__list
+              li
+                a(href="#sr1").scroll-to Расчет условий лизинга
+              li
+                a(href="#sr2").scroll-to Почему у наших клиентов условия по лизингу выгоднее?
+              li
+                a(href="#sr3").scroll-to Условия лизинга 
+              li
+                a(href="#sr4").scroll-to Наши партнеры
+          .section-right.section-right--full
+            .section-margin
+              form.form-calc.form-calc--leasing
+                .form-calc__content
+                  h3.item-title.item-title--no-style.item-title--size-26px#sr1 Расчет условий лизинга
+                  .form-calc__filter
+                    .form-calc__item
+                      select(name="").select-calc
+                        option(value="") Кол-во единиц техники
+                        option(value="") 111
+                        option(value="") 222
+                        option(value="") 333
+                        option(value="") 444
+                        option(value="") 555
+                    .form-calc__item
+                      .form-calc__range
+                        .range#range-one
+                          .range__body
+                            .range__title Стоимость единицы техники
+                            .range__value#range-one-value
+                          .range__positions
+                            div 0
+                            div 15 000 000
+                    .form-calc__item
+                      .form-calc__range
+                        .range#range-two
+                          .range__body
+                            .range__title Аванс
+                            .range__value#range-two-value
+                          .range__positions
+                            div 15%
+                            div 49%
+                    .form-calc__item
+                      .form-calc__range
+                        .range#range-three
+                          .range__body
+                            .range__title Срок
+                            .range__value#range-three-value
+                          .range__positions
+                            div 12 мес
+                            div 40 мес
+                  .form-calc__desc
+                    p Расчет является примерным, точная сумма ежемесячного платежа, рассчитаться при формировании коммерческого предложения менеджером.
+                    .form-calc__link
+                      a(href="") 8 800 250 9946
+                      div Бесплатный звонок
+                .form-calc__pic.form-calc__pic--leasing
+                  +image('content/delivery_form_bg.png', '')
+                  .form-calc__select
+                    .form-calc__title Выбрать лизинговую компанию
+                    .form-calc__item
+                      select(name="").select-calc
+                        option(value="") Выбрать наиболее выгодный вариант
+                        option(value="") 111
+                        option(value="") 222
+                        option(value="") 333
+                        option(value="") 444
+                        option(value="") 555
+                    ul.form-calc__list
+                      li.form-calc__item
+                        input.input(type="text" placeholder="Ваше имя")
+                      li.form-calc__item
+                        input.input(type="text" placeholder="Телефон")
+                      li.form-calc__item
+                        input.input(type="text" placeholder="Еmail")
+                      li.form-calc__item
+                        button.btn Получить расчет
+            .section-margin#sr2
+              h3.item-title.item-title--no-style.item-title--size-26px ПОЧЕМУ У НАШИХ КЛИЕНТОВ
+              h3.item-title.item-title--size-26px УСЛОВИЯ ПО ЛИЗИНГУ ВЫГОДНЕЕ?
+              ul.list-red-cub
+                li(data-index="1") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, deserunt nemo ratione sit facere iusto hic inventore recusandae! Cumque aspernatur commodi possimus nulla voluptatem incidunt eum id rem itaque saepe.
+                li(data-index="2") Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus repellendus, tempora, provident cum assumenda velit nobis optio sunt expedita voluptatibus ratione nulla nemo impedit sed ex ullam. Esse, voluptates necessitatibus.
+                li(data-index="3") Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corrupti iste tempore magni voluptates perferendis temporibus, dolore nesciunt cum dignissimos vel adipisci esse sequi reiciendis fugiat, modi saepe tempora ipsum.
+                li(data-index="4") Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut soluta, porro in laborum vitae placeat expedita corrupti perferendis hic illo nesciunt? Tenetur omnis molestias sint facilis consectetur, ex beatae quasi!
+                li(data-index="5") Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quidem unde rem natus expedita iusto, quisquam illum ex necessitatibus fuga suscipit sapiente eligendi id sunt reprehenderit delectus voluptates. Sapiente, officiis!
+            .section-margin#sr3
+              h3.item-title.item-title--size-26px УСЛОВИЯ ЛИЗИНГА
+              .leasing__terms
+                .lesing__desc
+                  p Рассчитаем платеж по лизингу. Наш специалист сделает расчет сразу в 48 компаниях и подберет самые выгодные условия
+                ul.list-red-cub
+                  li(data-index="1") Быстрое оформление и минимум документов. Ставка от 10%
+                  li(data-index="2") Гибкие условия выплат (сезонные платежи)
+                  li(data-index="3") Лучшие условия из 48 компании партнеров
+                  li(data-index="4") Спец условия в лизинговых компаниях для наших клиентов
+                  li(data-index="5") Возможен выбор собственной лизинговой компании
+            h3.item-title.item-title--size-26px#sr4 НАШИ ПАРТНЕРЫ
+            .partners
+              ul.partners__list
+                li
+                  +image('content/leasing_partners_logo_1.png', '')
+                li
+                  +image('content/leasing_partners_logo_2.png', '')
+                li
+                  +image('content/leasing_partners_logo_3.png', '')
+                li
+                  +image('content/leasing_partners_logo_4.png', '')
+                li
+                  +image('content/leasing_partners_logo_5.png', '')
+                li
+                  +image('content/leasing_partners_logo_6.png', '')
+                li
+                  +image('content/leasing_partners_logo_7.png', '')
+                li
+                  +image('content/leasing_partners_logo_8.png', '')
+                li
+                  +image('content/leasing_partners_logo_9.png', '')
+                li
+                  +image('content/leasing_partners_logo_10.png', '')
+                li
+                  +image('content/leasing_partners_logo_11.png', '')
+                li
+                  +image('content/leasing_partners_logo_12.png', '')
+                li
+                  +image('content/leasing_partners_logo_13.png', '')
+                li
+                  +image('content/leasing_partners_logo_14.png', '')
+                li
+                  +image('content/leasing_partners_logo_15.png', '')
+            .partners__btn
+              a(href="") И еще 33 партнера       
+  include ../includes/footer
+

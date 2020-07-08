@@ -1,0 +1,71 @@
+.select-filter {
+  height: 42px;
+  text-align: center;
+  font-size: 14px;
+  color: #1d1d1d;
+  border-radius: 0;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.81);
+  padding: 9px 30px 9px 12px;
+}
+
+.select-filter ul {
+  width: 100%;
+  border-radius: 0;
+}
+
+.select-sity {
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  color: #1d1d1d;
+  border-radius: 0;
+  background-color: #f6f6f6;
+  border: none;
+  padding: 17px 30px 14px 24px;
+  height: 62px !important;
+
+  @include desktopHd {
+    padding: 12px 30px 12px 24px;
+    height: auto !important;
+  }
+
+  @include laptop {
+    font-size: 10px;
+  }
+}
+
+.select-sity ul {
+  width: 100%;
+  border-radius: 0;
+}
+
+.nice-select {
+  font-size: 100% !important;
+  line-height: 1.15 !important;
+  float: none !important;
+  height: auto;
+}
+
+.nice-select .list {
+  border-radius: 0;
+}
+
+.select-calc {
+  width: 100%;
+  border-radius: 0;
+  color: #858585;
+  border: solid 1px #d2d2d2;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  padding: 15px 16px;
+
+  @include desktopHd {
+    padding: 11px 16px;
+  }
+}
+
+.select-calc ul {
+  width: 100%;
+  border-radius: 0;
+}

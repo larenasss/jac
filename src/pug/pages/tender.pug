@@ -1,0 +1,167 @@
+include ../utils/mixins
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title JAC
+.wrapper
+  .maincontent
+    include ../includes/sidebar
+    .container
+      header.header
+        +image('content/tender_bg_header.png', 'header__img')
+        .header__body.header__body.center 
+          .header__desc
+            h2.title.title--header Готовы участвовать в государственных
+              br
+              | и коммерческих тендерах
+        .header__info
+          ul.info
+            li.info__item
+              .info__item-pic
+                +image('icons/documents.png', 'info__item-img')
+              .info__item-desc
+                p Подготавливаем полный
+                  |
+                  br
+                  | пакет документов
+            li.info__item
+              .info__item-pic
+                +image('icons/tenders.png', 'info__item-img')
+              .info__item-desc
+                p Учавствуем с тендерами
+                  br
+                  | по 44ФЗ, 223 ФЗ
+            li.info__item
+              .info__item-pic
+                +image('icons/term.png', 'info__item-img')
+              .info__item-desc
+                p Учавствуем в тендерах более 3х лет
+      .page-content
+        section.tender
+          .tender__content
+            ul.section.list-red-cub.list-red-cub--flex-row
+              li(data-index='1') Проведено более 100 тендеров. 
+                br
+                | Имеем многолетний опыт
+              li(data-index='2') Полностью подготавливаем техническое задание для клиента
+              li(data-index='3') При необходимости можем выслать коммерческое предложение от партнеров
+            .slider  
+              .swiper-container.swiper-container-one
+                .swiper-wrapper
+                  .swiper-slide
+                    h3.tender__title НАШИ  КЕЙСЫ 1
+                    .list-info__item
+                      .list-info__content
+                        .list-info__desc.list-info__desc--text
+                          h4 ПОСТАВКА ОБОРУДОВАНИЯ ДЛЯ СКЛАДА КОМПАНИ "
+                            span CТРОЙЛЕНД
+                            | "
+                          p
+                            Lorem ipsum dolor sit amet, 
+                            | consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        .list-info__pic
+                          +image('content/tender-item-1.png', 'list-info__img')
+                  .swiper-slide
+                    h3.tender__title НАШИ  КЕЙСЫ 2
+                    .list-info__item
+                      .list-info__content
+                        .list-info__desc.list-info__desc--text
+                          h4 ПОСТАВКА ОБОРУДОВАНИЯ ДЛЯ СКЛАДА КОМПАНИ "
+                          span CТРОЙЛЕНД
+                          | "
+                          p
+                            Lorem ipsum dolor sit amet, 
+                            | consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        .list-info__pic
+                          +image('content/tender-item-1.png', 'list-info__img')
+                  .swiper-slide
+                    h3.tender__title НАШИ  КЕЙСЫ 3
+                    .list-info__item
+                      .list-info__content
+                        .list-info__desc.list-info__desc--text
+                          h4 ПОСТАВКА ОБОРУДОВАНИЯ ДЛЯ СКЛАДА КОМПАНИ "
+                          span CТРОЙЛЕНД
+                          | "
+                          p
+                            Lorem ipsum dolor sit amet, 
+                            | consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        .list-info__pic
+                          +image('content/tender-item-1.png', 'list-info__img')
+                  .swiper-slide
+                    h3.tender__title НАШИ  КЕЙСЫ 3
+                    .list-info__item
+                      .list-info__content
+                        .list-info__desc.list-info__desc--text
+                          h4 ПОСТАВКА ОБОРУДОВАНИЯ ДЛЯ СКЛАДА КОМПАНИ "
+                          span CТРОЙЛЕНД
+                          | "
+                          p
+                            Lorem ipsum dolor sit amet, 
+                            | consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        .list-info__pic
+                          +image('content/tender-item-1.png', 'list-info__img')
+                  .swiper-slide
+                    h3.tender__title НАШИ  КЕЙСЫ 3
+                    .list-info__content
+                      .list-info__desc.list-info__desc--text
+                        h4 ПОСТАВКА ОБОРУДОВАНИЯ ДЛЯ СКЛАДА КОМПАНИ "
+                        span CТРОЙЛЕНД
+                        | "
+                        p
+                          Lorem ipsum dolor sit amet, 
+                          | consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      .list-info__pic
+                        +image('content/tender-item-1.png', 'list-info__img')
+                  .swiper-slide
+                    h3.tender__title НАШИ  КЕЙСЫ 3
+                    .list-info__content
+                      .list-info__desc.list-info__desc--text
+                        h4 ПОСТАВКА ОБОРУДОВАНИЯ ДЛЯ СКЛАДА КОМПАНИ "
+                        span CТРОЙЛЕНД
+                        | "
+                        p
+                          Lorem ipsum dolor sit amet, 
+                          | consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      .list-info__pic
+                        +image('content/tender-item-1.png', 'list-info__img')
+                  .swiper-slide
+                    h3.tender__title НАШИ  КЕЙСЫ 3
+                    .list-info__content
+                      .list-info__desc.list-info__desc--text
+                        h4 ПОСТАВКА ОБОРУДОВАНИЯ ДЛЯ СКЛАДА КОМПАНИ "
+                        span CТРОЙЛЕНД
+                        | "
+                        p
+                          Lorem ipsum dolor sit amet, 
+                          | consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      .list-info__pic
+                        +image('content/tender-item-1.png', 'list-info__img')
+                  .swiper-slide
+                    h3.tender__title НАШИ  КЕЙСЫ 3
+                    .list-info__content
+                      .list-info__desc.list-info__desc--text
+                        h4 ПОСТАВКА ОБОРУДОВАНИЯ ДЛЯ СКЛАДА КОМПАНИ "
+                        span CТРОЙЛЕНД
+                        | "
+                        p
+                          Lorem ipsum dolor sit amet, 
+                          | consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      .list-info__pic
+                        +image('content/tender-item-1.png', 'list-info__img')
+              .slider-button
+                button.slider-button__item.slider-button__item--prev.prev-one
+                button.slider-button__item.slider-button__item--next.next-one
+              .slider__paginations
+                .swiper-pagination.swiper-pagination-one
+            section.section.request
+              .request__title.request__title--size-34 ОСТАВЬТЕ ЗАЯВКУ НА ТЕНДЕР
+              .request__content
+                form.request__form(action="")
+                    input(type="text", placeholder="Ваше имя").input  
+                    input(type="text", placeholder="Ваш телефон").input
+                    button(type="submit").btn Оставить заявку
+  include ../includes/footer

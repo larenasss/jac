@@ -1,0 +1,58 @@
+include ../utils/mixins
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title JAC
+.wrapper
+  .maincontent
+    include ../includes/sidebar
+    .container
+      header.header
+        +image('content/delivery_bg_header.png', 'header__img')
+        .header__body.header__body.center
+          .header__subtitle Tecт драйв
+          .header__desc
+            h2.title.title--header 
+              | jac предлагает пройти тест-драйв
+              br
+              | понравившейся вам модели
+              br
+              | и проверить характеристики
+              br
+              | в реальных условиях
+          button.btn Оставить заявку
+      .page-content
+        .breadcrumb
+          ul.breadcrumb__list
+            li.breadcrumb__item 
+              a(href="").breadcrumb__link Главная - 
+            li.breadcrumb__item.breadcrumb__item--active 
+              a(href="").breadcrumb__link Тест драйв
+        section.test-drive
+          .test-drive__content
+            section.section-margin.test-drive__top
+              .test-drive__left
+                ul.list-red-cub
+                  li(data-index='1') Заключаем договор
+                  li(data-index='2') Техника отправляется к вам на склад
+                  li(data-index='3') Вы тестируете технику на собственном складе
+                  li(data-index='4') Принимаете решение о покупке
+                  li(data-index='5') Оплачиваете покупку или производим возврат техники
+              .test-drive__right
+                h2.test-drive__title Тест-драйв
+                .test-drive__pic
+                  +image('content/test-drive_content.png', 'test-drive__img')
+            section.section.test-drive__bottom
+              .request
+                .request__title.request__title--size-34 ОСТАВЬТЕ ЗАЯВКУ НА ТЕСТ-ДРАЙВ
+                .request__content
+                  form.request__form(action="")
+                    input(type="text", placeholder="Ваше имя").input  
+                    input(type="text", placeholder="Ваш телефон").input
+                    button(type="submit").btn Оставить заявку
+  include ../includes/footer
+

@@ -1,0 +1,24 @@
+.company {
+  display: flex;
+}
+
+.company__info-text span {
+  color: #ed1c24;
+  font-weight: bold;
+}
+
+.company__info-text {
+  font-weight: 300;
+}
+
+.company__info-text {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.company__slider {
+  margin-bottom: 34px;
+}

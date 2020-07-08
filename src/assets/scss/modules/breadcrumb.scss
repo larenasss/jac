@@ -1,0 +1,29 @@
+.breadcrumb {
+  font-size: 18px;
+  padding: 24px 0;
+
+  &--partners {
+    margin-bottom: 50px;
+  }
+
+  @include desktopHd {
+    font-size: 16px;
+  }
+}
+
+.breadcrumb__list {
+  display: flex;
+}
+
+.breadcrumb__item {
+  margin-left: 3px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &--active {
+    font-weight: bold;
+    color: #ed1c24;
+  }
+}

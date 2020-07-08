@@ -1,0 +1,288 @@
+.list-info {
+  &--width-50 {
+
+    .list-info__pic {
+      width: 50%;
+
+      @include laptop {
+        width: 100%;
+      }
+    }
+
+    .list-info__desc--text {
+      margin: 0;
+    }
+
+  }
+
+  &--main {
+
+    & .item-title {
+      margin-bottom: 0;
+  
+      @include net-book {
+        margin-bottom: 25px;
+      }
+    }
+
+    .list-info__desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .list-info__pic {
+      width: 50%;
+
+      @include laptop {
+        width: 100%;
+      }
+    }
+
+    .list-red-cub li {
+      margin-bottom: 48px;
+    
+      @include desktop {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  
+}
+
+.list-info__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 105px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--reverse {
+
+    @include laptop {
+      .list-info__content {
+        flex-direction: column-reverse !important;
+      }
+    }
+  }
+
+  &--slider {
+    @include laptop {
+      & .list-info__desc--text {
+        margin-top: 25px !important;
+      }
+    }
+  }
+
+  @include laptop {
+    margin-bottom: 50px;
+
+    .list-info__content {
+      flex-direction: column;
+    }
+  }
+}
+
+.list-info--guarantee li {
+  flex-direction: column;
+  align-items: flex-start;
+
+  &.no-border {
+    & .list-info__desc--text {
+      border: none;
+      padding: 0 30px;
+    }
+
+    & .list-info__pic img {
+      min-height: auto;
+    }
+
+    & .list-info__desc--text p {
+        padding: 0;
+        margin-bottom: 15px;
+        color: #171717;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    & .list-info__desc--text span {
+      font-weight: 900;
+    }
+  }
+}
+
+.list-info__desc {
+  width: 50%;
+  margin-right: 35px;
+
+  @include desktop {
+    justify-content: flex-start;
+  }
+
+  @include laptop {
+    margin-top: 35px;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  &:nth-child(even) {
+    margin-right: 0;
+    margin-left: 35px;
+
+    @include laptop {
+      margin-left: 0;
+    }
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    margin-bottom: 14px;
+    
+    span {
+      color: #ed1c24;
+    }
+  }
+
+  &--text {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 25px 20px;
+    border: 1px solid rgba(0,0,0,.1);
+  }
+
+  &--slider {
+    @include laptop {
+      margin-top: 22px !important;
+    }
+  }
+
+  @include tablets {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.list-info__desc div {
+  @include laptop {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.list-info__desc div p {
+  margin-bottom: 15px;
+  @include laptop {
+    width: 60%;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
+
+.list-info__body {
+  width: 42%;
+
+  @include tablets {
+    width: 100%;
+  }
+
+  &--change-width {
+    width: 48%;
+
+    @include tablets {
+      width: 100%;
+    }
+  }
+
+  &--leasing {
+    width: 50%;
+  }
+}
+
+.list-info__img {
+  width: 100%;
+}
+
+.list-info__pic img {
+  width: 100%;
+  max-height: 620px;
+  min-height: 100%;
+
+  @include desktopHd {
+    max-height: 420px;
+  }
+
+  @include laptop {
+    max-height: none;
+  }
+}
+
+.list-info__desc-item {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: attr(data-index);
+    width: 18px;
+    height: 18px;
+    left: 0;
+    background-color: #ed1c24;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.list-info__brand {
+  margin-top: 35px;
+}
+
+.list-info__brand h4 {
+  color: #ed1c24;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.list-info__brand p {
+  color: #171717;
+}
+
+.list-info__brand-body {
+  padding: 16px;
+  display: flex;
+  box-shadow: 0 0 3px 0 rgba(19, 19, 19, 0.33);
+  margin-right: 1px;
+}
+
+//@include
+
+.list-info__content {
+  display: flex;
+  width: 100%;
+}
+
+
+.list-info__logo {
+  margin-top: 80px;
+
+  @include desktop {
+    margin-top: 0;
+  }
+}
+
+.list-info__logo img {
+  width: 40%;
+}

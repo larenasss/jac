@@ -1,0 +1,48 @@
+.title {
+  font-size: 54px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 35px;
+  line-height: 1.30;
+
+  @include desktopHd {
+    font-size: 44px;
+  }
+
+  @include desktop {
+    font-size: 34px;
+  }
+
+  @include net-book {
+    font-size: 22px;
+  }
+
+  &--header {
+    margin-bottom: 65px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include tablets {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.title span {
+  color: #f9c428;
+}
+
+.title--color-span span {
+  color: #ed1c24;
+}
+
+.title__sub {
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 10px;
+  font-size: 20px;
+  text-transform: none;
+}

@@ -1,0 +1,33 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+
+  @include desktopHd {
+    justify-content: space-around;
+  }
+}
+
+.filter__select {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include net-book {
+    flex-direction: column;
+    margin-right: 0;
+  }
+}
+
+.filter__select-title {
+  margin-right: 15px;
+  font-weight: bold;
+
+  @include net-book {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+}

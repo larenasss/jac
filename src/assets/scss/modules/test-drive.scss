@@ -1,0 +1,67 @@
+.test-drive__top {
+  display: flex;
+
+  @include laptop {
+    flex-direction: column-reverse;
+  }
+}
+
+.test-drive__left {
+  width: 40%;
+  margin-right: 40px;
+  padding-top: 20px;
+
+  @include net-book {
+    width: 50%;
+  }
+
+  @include laptop {
+    padding-top: 0;
+    margin-right: 0;
+  }
+}
+
+.test-drive__title {
+  font-family: 'Akzidenz-Grotesk';
+  opacity: 0.1;
+  font-size: 60px;
+  text-transform: uppercase;
+
+  @include tablets {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.test-drive__right {
+  width: 48%;
+
+  @include laptop {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.test-drive__desc {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid red;
+
+  &:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.test-drive__pic {
+
+  @include tablets {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.test-drive__pic img {
+  width: 100%;
+}

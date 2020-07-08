@@ -1,0 +1,204 @@
+include ../utils/mixins
+
+<!DOCTYPE html>
+html(lang="ru_RU")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title JAC
+.wrapper
+  .maincontent
+    include ../includes/sidebar
+    .container
+      header.header
+        +image('content/delivery_bg_header.png', 'header__img')
+        .header__body
+          .header__desc
+            h2.title.title--header Доставка вилочных погрузчиков до вашего
+              br
+              | склада
+              span  от 2х до 4х дней
+            h2.title.title--header Приобретение техники
+              |
+              br
+              span  в кредит, лизинг, рассрочку
+        .header__info
+          ul.info
+            li.info__item.in
+              .info__item-pic
+                +image('icons/delivery.png', 'info__item-img')
+              .info__item-desc
+                p Доставка на 50% дешевле чем
+                 br
+                 | на транспортной компании
+            li.info__item
+              .info__item-pic
+                +image('icons/calculator.png', 'info__item-img')
+              .info__item-desc
+                p Обязательное страхование груза
+            li.info__item
+              .info__item-pic
+                +image('icons/money.png', 'info__item-img')
+              .info__item-desc
+                p Гибкая ситемы оплаты
+      .page-content
+        .breadcrumb
+          ul.breadcrumb__list
+            li.breadcrumb__item 
+              a(href="").breadcrumb__link Главная - 
+            li.breadcrumb__item.breadcrumb__item--active 
+              a(href="").breadcrumb__link Доставка
+        .delivery
+          .sub-menu
+            ul.sub-menu__list
+              li.sub-menu__item Доставка
+              li
+                a(href="#sr1").scroll-to Стоимость доставки
+              li
+                a(href="#sr2").scroll-to Наш склад
+              li
+                a(href="#sr3").scroll-to Доставка
+              li
+                a(href="#sr4").scroll-to Страхование
+              li
+                a(href="#sr5").scroll-to Фотографии
+              li.sub-menu__item Оплата
+              li
+                a(href="#sr6").scroll-to Гибкая система оплаты
+              li
+                a(href="#sr7").scroll-to Приобритение техники в лизинг от 10%
+          .section-right
+            h3.item-title.item-title--no-style.item-title--size-26px ПОЧЕМУ У НАШИХ КЛИЕНТОВ ДОСТАВКА
+            h3.item-title.item-title--size-26px БЫСТРЕЕ И ВЫГОДНЕЕ В 3 РАЗА?
+            .section-margin
+              ul.list-red-cub
+                li(data-index="1") Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, adipisci repellat voluptatem facilis aut dolores sequi suscipit! Quo quidem cum reiciendis inventore, magni, soluta cumque nesciunt dicta non vel voluptatem.
+                li(data-index="2") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                li(data-index="3") Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores inventore voluptatibus tenetur eaque cumque, ullam quisquam sunt ipsam aut praesentium, maxime sed molestias. Enim aut libero quis possimus quaerat. Quibusdam!
+            h3.item-title.item-title--size-26px#sr1 СТОИМОСТЬ ДОСТАВКИ
+            .section-margin
+              form.form-calc(action="")
+                .form-calc__content
+                    .form-calc__item
+                      select(name="").select-calc
+                        option(value="") Грузоподъемность
+                        option(value="") 111
+                        option(value="") 222
+                        option(value="") 333
+                        option(value="") 444
+                        option(value="") 555
+                    .form-calc__item
+                      select(name="").select-calc
+                        option(value="") Тип двигателя
+                        option(value="") 111
+                        option(value="") 222
+                        option(value="") 333
+                        option(value="") 444
+                        option(value="") 555
+                    .form-calc__item
+                      input.input(type="text" placeholder="Город доставки")
+                    .form-calc__item
+                      input.input(type="text" placeholder="Ваше имя")
+                    .form-calc__item
+                      input.input(type="text" placeholder="Ваш телефон")
+                    .form-calc__item
+                      input.input(type="text" placeholder="Еmail")
+                    .form-calc__item
+                      button.btn Рассчитать стоимость доставки
+                .form-calc__pic
+                  +image('content/delivery_form_bg.png', '')
+            .section-margin
+              ul.list-info.list-info--width-50
+                li.list-info__item#sr2
+                  .list-info__content
+                    .list-info__pic
+                      +image('content/delivery_bg_list_1.png', 'list-info__img')
+                    .list-info__desc
+                      h3.item-title.item-title--size-26px НАШ СКЛАД
+                      ul.list-red-cub.list-red-cub--content-center
+                        li(data-index='1') Склады располагаются в городах: Москва, Уфа, Набережные Челны, Иркутск, Барнаул, Кемерово.
+                        li(data-index='2') При заказе погрузчика мы отправим его вам с ближайшего склада. 
+                        li(data-index='3') Это сократит время и стоимость доставки. При желании поможем с погрузкой и выгрузкой техники в автомобиль
+                        li(data-index='4') Квалифицированные сервисные бригады. Выезд в течении 24 часов после заявки
+                li.list-info__item.list-info__item--reverse#sr3
+                  .list-info__content
+                    .list-info__desc
+                      h3.item-title.item-title--size-26px ДОСТАВКА
+                      ul.list-red-cub.list-red-cub--content-center.list-red-cub--no-cub
+                        li За счет собственной логистической службы стоимость доставки будет дешевле на 50%, чем доставка транспортными кампаниями.
+                        li Доставка осуществляется напрямую с наших складов, без перегрузки в терминалах
+                        li Сроки доставки по территории России, в среднем занимают от 2х до 4х дней*
+                    .list-info__pic
+                      +image('content/delivery_bg_list_2.png', 'list-info__img')
+                li.list-info__item#sr4
+                  .list-info__content
+                    .list-info__pic
+                      +image('content/delivery_bg_list_3.png', 'list-info__img')
+                    .list-info__desc
+                      h3.item-title.item-title--size-26px СТРАХОВАНИЕ
+                      ul.list-red-cub.list-red-cub--content-center
+                        li(data-index='1') Все риски связанные с погрузкой и транспортировкой мы берем на себя.
+                        li#sr5(data-index='2') Все условия отражены в договоре.
+            .section-margin
+              h3.item-title.item-title--center.item-title--size-26px ФОТОГРАФИИ
+              .slider  
+                .swiper-container.swiper-container-one
+                  ul.swiper-wrapper
+                    li.swiper-slide
+                      +image('content/delivery_slider.png', '')
+                    li.swiper-slide
+                      +image('content/delivery_slider.png', '')
+                    li.swiper-slide
+                      +image('content/delivery_slider.png', '')
+                    li.swiper-slide
+                      +image('content/delivery_slider.png', '')
+                    li.swiper-slide
+                      +image('content/delivery_slider.png', '')
+                    li.swiper-slide
+                      +image('content/delivery_slider.png', '')
+                    li.swiper-slide
+                      +image('content/delivery_slider.png', '')
+                    li.swiper-slide
+                      +image('content/delivery_slider.png', '')
+                .slider-button
+                  button.slider-button__item.slider-button__item--prev.prev-one
+                  button.slider-button__item.slider-button__item--next.next-one
+                .slider__paginations
+                  .swiper-pagination.swiper-pagination-one
+            ul.list-info.list-info--width-50
+              li.list-info__item#sr6
+                .list-info__content
+                  .list-info__pic
+                    +image('content/delivery_bg_list_4.png', 'list-info__img')
+                  .list-info__desc
+                    h3.item-title.item-title--size-26px ГИБКАЯ СИСТЕМА ОПЛАТЫ
+                    ul.list-red-cub.list-red-cub--content-center
+                      li(data-index='1') 100% предоплата 
+                      li(data-index='2') Предоплата 30% и 70% при получении техники 
+                      li(data-index='3') Предоплата 50% и 50% при получении техники 
+                      li(data-index='4') Тест драйв 
+                      li(data-index='5') Возможны индивидуальные условия оплаты
+              li.list-info__item.list-info__item--reverse#sr7
+                .list-info__content
+                  .list-info__desc
+                    h3.item-title.item-title--no-style.item-title--size-26px ПРИОБРИТЕНИЕ ТЕХНИКИ
+                    h3.item-title.item-title--size-26px В ЛИЗИНГ ОТ 10%
+                    ul.list-red-cub.list-red-cub--content-center
+                      li(data-index='1') Быстрое оформление и минимум документов
+                      li(data-index='2') Гибкие условия выплат (сезонные платежи)
+                      li(data-index='3') Лучшие условия из 48 компании партнеров
+                      li(data-index='4') Спец условия в лизинговых компаниях для наших клиентов
+                      li(data-index='5') Возможен выбор собственной лизинговой компании
+                  .list-info__pic
+                    +image('content/delivery_bg_list_5.png', 'list-info__img')
+  include ../includes/footer      
+
+
+
+
+
+
+
+
+
