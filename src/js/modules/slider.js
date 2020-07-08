@@ -31,6 +31,7 @@ $(document).ready(function () {
     speed: 500,
     pagination: {
       el: '.swiper-pagination-two',
+      clickable: true,
     },
    // autoplay:{
      // delay: 3000
@@ -47,6 +48,7 @@ $(document).ready(function () {
     speed: 500,
     pagination: {
       el: '.swiper-pagination-three',
+      clickable: true,
     },
    // autoplay:{
      // delay: 3000
@@ -63,6 +65,7 @@ $(document).ready(function () {
     speed: 500,
     pagination: {
       el: '.swiper-pagination-four',
+      clickable: true,
     },
    // autoplay:{
      // delay: 3000
@@ -79,6 +82,7 @@ $(document).ready(function () {
     speed: 500,
     pagination: {
       el: '.swiper-pagination-five',
+      clickable: true,
     },
    // autoplay:{
      // delay: 3000
