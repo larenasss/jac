@@ -53,7 +53,19 @@ body {
   }
 
   &--footer {
-    margin-right: 11%;
+    padding-left: 300px;
+
+    @include desktopHd {
+      padding-left: 240px;
+    }
+  
+    @include laptop {
+      padding-left: 22% !important;
+    }
+  
+    @include tablets {
+      padding-left: 0 !important;
+    }
   }
 }
 

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
 
-  @include desktop {
+  @include net-book {
     flex-direction: column;
     align-items: center;
   }
@@ -13,7 +13,7 @@
   position: relative;
   margin-right: 20px;
 
-  @include desktop {
+  @include net-book {
     width: 524px;
     margin-bottom: 80px;
     margin-right: 0;
@@ -23,6 +23,10 @@
 .form-filter__form {
   padding: 32px 36px;
   background-color: #f9f9f9;
+
+  @include net-book {
+    padding: 16px;
+  }
 }
 
 .form-filter__pic img {
@@ -123,15 +127,6 @@
   position: static;
 }
 
-.form-filter__pic .slider-button {
-  bottom: 0;
-  right: 0;
-
-  @include desktop {
-    bottom: -30px;
-  }
-}
-
 .form-filter-360 {
   position: absolute;
   width: 34px;
@@ -141,7 +136,7 @@
   background: url('../../img/icons/360.png');
   background-repeat: no-repeat;
 
-  @include desktop {
+  @include net-book {
     bottom: -30px;
   }
 }

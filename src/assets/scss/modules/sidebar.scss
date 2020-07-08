@@ -33,7 +33,7 @@
   margin-bottom: 80px;
 
   @include desktopHeight {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   @include laptop {
@@ -62,4 +62,10 @@
 
 .sidebar__contacts {
   margin-bottom: 15px;
+}
+
+.sidebar__selected {
+  @include desktopHeight {
+    display: none;
+  }
 }

@@ -46,6 +46,10 @@
   margin-right: 0 !important;
 }
 
+.swiper-pagination--right {
+  right: 25%;
+}
+
 .swiper-pagination-bullet {
   background-color: #292929;
   opacity: 1;
@@ -66,6 +70,20 @@
     top: 10px;
     bottom: auto;
     right: 0;
+  }
+
+  &--left {
+    right: 0;
+    left: 6.5%;
+    bottom: -19px;
+  }
+
+  &--main {
+    bottom: 0;
+
+    @include net-book {
+      bottom: -30px;
+    }
   }
 }
 
