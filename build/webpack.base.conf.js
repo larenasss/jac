@@ -39,7 +39,7 @@ module.exports = {
     guarantee: `${PATHS.src}/js/guarantee.js`,
   },
   output: {
-    filename: `${PATHS.assets}js/[name].[hash].js`,
+    filename: `${PATHS.assets}js/[name].js`,
     path: PATHS.dist,
   },
   module: {
