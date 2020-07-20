@@ -6,6 +6,10 @@
     flex-direction: column;
     align-items: center;
   }
+
+  @include phone-max {
+    padding: 40px 0 0 0;
+  }
 }
 
 .form-filter__left {
@@ -18,14 +22,30 @@
     margin-bottom: 80px;
     margin-right: 0;
   }
+
+  @include phone-max {
+    display: none;
+  }
 }
 
 .form-filter__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.form-filter__content {
   padding: 32px 36px;
   background-color: #f9f9f9;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   @include net-book {
     padding: 16px;
+    margin-bottom: 50px;
   }
 }
 
@@ -52,11 +72,11 @@
   }
 }
 
-.form-filter__block {
+.form-filter__block:not(:last-child) {
   margin-bottom: 30px;
 
-  &:last-child {
-    margin-bottom: 0;
+  @include phone-max {
+    margin-bottom: 15px;
   }
 }
 
@@ -68,11 +88,19 @@
   @include desktopHd {
     font-size: 18px;
   }
+
+  @include phone-max {
+    font-size: 16px;
+  }
 }
 
 
 .form-filter__inputs {
   display: flex;
+
+  @include phone-max {
+    flex-flow: wrap;
+  }
 }
 
 .form-filter__inputs label {
@@ -82,6 +110,11 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @include phone-max {
+    margin-bottom: 16px;
+    margin-right: 12px;
   }
 }
 

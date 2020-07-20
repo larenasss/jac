@@ -1,6 +1,10 @@
 .list-item {
   display: flex;
   flex-flow: wrap;
+
+  @include phone-max {
+    flex-flow: nowrap;
+  }
 }
 
 .list-item li {
@@ -13,6 +17,12 @@
   @include laptop {
     width: 50%;
   }
+
+  @include phone-max {
+    background-color: #f7f7f7;
+    align-items: center;
+    min-height: 470px;
+  }
 }
 
 .list-item__pic {
@@ -20,6 +30,14 @@
   flex: 1;
   display: flex;
   align-items: center;
+
+  @include phone-max {
+    max-width: 328px;
+    max-height: 241px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    width: 90%;
+  }
 }
 
 .list-item__pic img {
@@ -35,6 +53,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include phone-max {
+    flex-direction: column;
+  }
 }
 
 .list-item__desc span {
@@ -44,6 +66,12 @@
 
   @include desktopHd {
     font-size: inherit;
+  }
+
+  @include phone-max {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 26px;
   }
 }
 
@@ -59,7 +87,7 @@
     content: "";
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%, -50%) rotate(45deg);
     width: 6px;
     height: 6px;
@@ -72,5 +100,20 @@
   @include desktopHd {
     width: 33px;
     height: 33px;
+  }
+
+  @include phone-max {
+    display: none;
+  }
+}
+
+.list-item__info {
+  display: none;
+  font-size: 16px;
+  margin-bottom: 30px;
+
+  @include phone-max {
+    display: block;
+    text-align: center;
   }
 }

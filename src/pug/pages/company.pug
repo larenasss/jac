@@ -13,6 +13,18 @@ html(lang="ru_RU")
     .container
       header.header
         +image('content/company_bg_header.png', 'header__img')
+        .header__top
+          button.header__btn
+            ul
+              li
+              li
+              li
+          .header__top-logo
+            +image('content/logo.png', 'logo__img')
+          .header__top-phone
+            .phone
+              a.phone__link(href="tel:+78002509946") 8 800 250 9946
+              span Звонок по ФР бесплатный
         .header__body
           .header__desc
             h2.title.title--header.title--color-span Спецтехнику марки
@@ -20,7 +32,7 @@ html(lang="ru_RU")
               |  выбирают
               br
               | крупные международные компании 
-        .header__info
+        .header__info.display-none-tablets
           ul.info
             li.info__item
               .info__item-pic
@@ -44,6 +56,22 @@ html(lang="ru_RU")
               a(href="").breadcrumb__link Главная - 
             li.breadcrumb__item.breadcrumb__item--active 
               a(href="").breadcrumb__link О компании
+        ul.info.info--mobile.display-flex-tablets
+          li.info__item
+            .info__item-pic
+              +image('icons/parts.png', 'info__item-img')
+            .info__item-desc
+              p 7 складов в РФ
+          li.info__item
+            .info__item-pic
+              +image('icons/guarantee.png', 'info__item-img')
+            .info__item-desc
+              p Гарантия до 5 лет
+          li.info__item
+            .info__item-pic
+              +image('icons/engineer.png', 'info__item-img')
+            .info__item-desc
+              p Реализованно 10.000 погрузчиков
         .company
           .sub-menu
             ul.sub-menu__list
@@ -70,6 +98,8 @@ html(lang="ru_RU")
               ul.list-info.list-info--width-50
                 li.list-info__item
                   .list-info__content
+                    .item-title-box
+                      h3.item-title.display-inline-mobile НАШИ СКЛАДЫ
                     .list-info__pic
                       .slider
                         .swiper-container.swiper-container-one
@@ -87,8 +117,8 @@ html(lang="ru_RU")
                           button.slider-button__item.slider-button__item--next.next-one
                         .slider__paginations
                           .swiper-pagination.swiper-pagination-one.swiper-pagination--right
-                    .list-info__desc
-                      h3.item-title.item-title--size-26px#sr1 НАШИ СКЛАДЫ
+                    .list-info__desc.list-info__desc--right
+                      h3.item-title.item-title--size-26px#sr1.display-none-mobile НАШИ СКЛАДЫ
                       ul.list-red-cub.list-red-cub--content-center
                         li(data-index='1') Склады располагаются в городах: Москва, Уфа, Набережные Челны, Иркутск, Барнаул, Кемерово.
                         li(data-index='2') При заказе погрузчика мы отправим его вам с ближайшего склада. 
@@ -98,7 +128,7 @@ html(lang="ru_RU")
               ul.list-info.list-info--width-50
                 li.list-info__item
                   .list-info__content
-                    .list-info__pic
+                    .list-info__pic.display-none-mobile
                       .slider
                         .swiper-container.swiper-container-two
                           .swiper-wrapper
@@ -115,7 +145,7 @@ html(lang="ru_RU")
                           button.slider-button__item.slider-button__item--next.next-two
                         .slider__paginations
                           .swiper-pagination.swiper-pagination-two.swiper-pagination--right
-                    .list-info__desc
+                    .list-info__desc.list-info__desc--column
                       h3.item-title.item-title--size-20px FORMULA-1
                       div
                         P FORMULA-1 - Спецтехника китайской марки JAC была задействована на российском этапе Гран-при «Формулы-1», проходившем в Сочи.
@@ -123,7 +153,7 @@ html(lang="ru_RU")
                           +image('content/logo_f1.png', '')
                 li.list-info__item
                   .list-info__content
-                    .list-info__pic
+                    .list-info__pic.display-none-mobile
                       .slider
                         .swiper-container.swiper-container-three
                           .swiper-wrapper
@@ -140,7 +170,7 @@ html(lang="ru_RU")
                           button.slider-button__item.slider-button__item--next.next-three
                         .slider__paginations
                           .swiper-pagination.swiper-pagination-three.swiper-pagination--right
-                    .list-info__desc
+                    .list-info__desc.list-info__desc--column
                       h3.item-title.item-title--size-20px FIFA
                       div
                         P FIFA- Погрузчики JAC обслуживали фан-зону ЧМ по футболу FIFA 2018 во всех регионах. 
@@ -173,6 +203,7 @@ html(lang="ru_RU")
                     .list-info__pic
                       +image('content/guarantee-list-2.png', 'list-info__img')
                 li.list-info__item.list-info__item--slider
+                  .item-title-box
                   h3.item-title.item-title--size-26px#sr5 СКЛАД ЗАПАСНЫХ ЧАСТЕЙ
                   .list-info__content
                     .list-info__pic
@@ -187,7 +218,7 @@ html(lang="ru_RU")
                               +image('content/guarantee-list-1.png', 'list-info__img')
                             .swiper-slide
                               +image('content/guarantee-list-1.png', 'list-info__img')
-                        .slider-button.slider-button--min
+                        .slider-button.slider-button--14
                           button.slider-button__item.slider-button__item--prev.prev-four
                           button.slider-button__item.slider-button__item--next.next-four
                         .slider__paginations
@@ -219,7 +250,7 @@ html(lang="ru_RU")
                         |  - это концерн предприятий, который объединяет в себе заводы по производству складской техники, легковые и грузовые автомобили, автобусы,  спецтехнику, а так же финансовый институт и научно исследовательский центр
                       p - 50-летний опыт развития компании JAC позволил достичь мощности производства более 1 миллиона единиц автомобилей сполным циклом производства в год. 
                       p Компания вошла в десятку крупнейших предприятий автомобильной отрасли в Китае.
-            .section
+            .section.display-none-mobile
               .slider
                 .swiper-container.swiper-container-five
                   .swiper-wrapper
@@ -236,14 +267,15 @@ html(lang="ru_RU")
                   button.slider-button__item.slider-button__item--next.next-five
                 .slider__paginations
                   .swiper-pagination.swiper-pagination-five
-            section.request
+            section.request.display-none-mobile
               .request__title Оставьте заявку и мы подберем для вас погрузчик
               .request__content
                 form.request__form(action="")
                   button(type="submit").btn Оставить заявку
             section.section.company__models
-              h3.item-title.item-title--no-style.item-title--size-26px#sr8 ГОСУДАРСТВЕННАЯ КОРПОРАЦИЯ
-              h3.item-title.item-title--size-26px JAC ПРОИЗВОДИТ
+              .item-title-box 
+                h3.item-title.item-title--no-style.item-title--size-26px#sr8 ГОСУДАРСТВЕННАЯ КОРПОРАЦИЯ
+                h3.item-title.item-title--size-26px JAC ПРОИЗВОДИТ
               .models
                 ul.models__list
                   li
@@ -273,4 +305,13 @@ html(lang="ru_RU")
                   li
                     +image('content/company_item_9.png', '')
                     .models__title Электротележки
+            section.section.request
+              h2.request__title.request__title--size-34 ОСТАЛИСЬ ВОПРОСЫ?
+                .request__sub-title Оставьте заявку и мы на них ответим
+              .request__content
+                form.request__form(action="")
+                    input(type="text", placeholder="Ваше имя").input  
+                    input(type="text", placeholder="Ваш телефон").input
+                    input(type="text", placeholder="Ваш Еmail").input.display-block-mobile
+                    button(type="submit").btn.btn--request Оставить заявку
   include ../includes/footer

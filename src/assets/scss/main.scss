@@ -5,7 +5,6 @@
 @import '../../../node_modules/nouislider/distribute/nouislider.css';
 
 @import "utils/mixins.scss";
-@import "utils/base.scss";
 @import "utils/fonts.scss";
 
 
@@ -49,3 +48,5 @@
 @import "./modules/tender.scss";
 @import "./modules/form-calc.scss";
 @import "./modules/range.scss";
+
+@import "utils/base.scss";

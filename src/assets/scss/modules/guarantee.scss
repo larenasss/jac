@@ -8,16 +8,18 @@
   @include tablets {
     flex-wrap: wrap;
   }
+
+  @include phone-max {
+    flex-wrap: unset !important;
+  }
 }
 
 .guarantee__list li {
-  box-shadow: 0 0 3px 0 rgba(46, 46, 46, 0.34);
   background-color: #ffffff;
   margin-right: 50px;
-  padding: 20px;
+  padding: 1px 2px;
 
   @include desktopHd {
-    padding: 20px;
     margin-right: 20px;
   }
 
@@ -27,6 +29,29 @@
     margin-right: 0;
     margin-bottom: 20px;
   }
+
+  @include phone-max {
+    margin: 0 !important;
+  }
+}
+
+.guarantee__body {
+  box-shadow: 0 0 3px 0 rgba(46, 46, 46, 0.34);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+
+  @include desktopHd {
+    padding: 20px;
+  }
+}
+
+.guarantee .slider , .guarantee__slider.swiper-container {
+  height: auto;
+}
+
+.guarantee__list .guarantee__body {
+  height: 100%;
 }
 
 .guarantee__list li:last-child {
@@ -39,6 +64,7 @@
 
 .guarantee__pic {
   padding: 20px 0;
+  flex: 1;
 }
 
 .guarantee__pic img {
@@ -90,5 +116,11 @@
   @include tablets {
     padding-top: 10px;
     font-size: 12px;
+  }
+}
+
+.guarantee__service {
+  @include phone-max {
+    display: none;
   }
 }

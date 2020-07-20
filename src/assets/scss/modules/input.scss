@@ -15,11 +15,18 @@
     padding: 11px 16px;
   }
 
-  @include tablets {
-    font-size: 12px;
+  @include phone-max {
+    margin-bottom: 12px;
+    max-width: 330px;
+    font-size: 16px;
+    padding: 20px;
   }
 }
 
 .input:not(:last-child) {
   margin-right: 20px;
+  
+  @include phone-max {
+    margin-right: 0;
+  }
 }

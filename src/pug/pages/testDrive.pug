@@ -13,6 +13,18 @@ html(lang="en")
     .container
       header.header
         +image('content/delivery_bg_header.png', 'header__img')
+        .header__top
+          button.header__btn
+            ul
+              li
+              li
+              li
+          .header__top-logo
+            +image('content/logo.png', 'logo__img')
+          .header__top-phone
+            .phone
+              a.phone__link(href="tel:+78002509946") 8 800 250 9946
+              span Звонок по ФР бесплатный
         .header__body.header__body.center
           .header__subtitle Tecт драйв
           .header__desc

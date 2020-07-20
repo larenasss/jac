@@ -15,8 +15,9 @@
   }
 
   @include net-book {
-    font-size: 22px;
+    font-size: 22px !important;
   }
+
 
   &--header {
     margin-bottom: 65px;

@@ -2,8 +2,27 @@
   margin-bottom: 110px;
 }
 
+.main__maps {
+  @include phone-max {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .main__maps img {
   width: 100%;
+
+  @include phone-max {
+    width: auto;
+  }
+}
+
+.main__certificate {
+  @include phone-max {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
 }
 
 .main__certificate ul {
@@ -12,6 +31,11 @@
 
   @include tablets {
     justify-content: center;
+  }
+
+  @include phone-max {
+    flex-wrap: nowrap;
+    justify-content: stretch !important;
   }
 }
 
@@ -26,7 +50,12 @@
 }
 
 .main__certificate ul li img {
+  
   @include tablets {
     margin: 0 auto;
+  }
+
+  @include phone-max {
+    width: 50%;
   }
 }

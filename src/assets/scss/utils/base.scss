@@ -17,11 +17,7 @@ body {
   }
 
   @include laptop {
-    font-size: 15px;
-  }
-
-  @include tablets {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -30,7 +26,7 @@ body {
 }
 
 .maincontent {
-
+  position: relative;
   @include laptop {
     padding: 0;
   }
@@ -45,11 +41,13 @@ body {
   }
 
   @include laptop {
-    padding-left: 19% !important;
+    padding-left: 19%;
   }
 
   @include tablets {
-    padding-left: 0 !important;
+    padding-left: 0;
+    position: relative;
+    z-index: 10;
   }
 
   &--footer {
@@ -74,6 +72,64 @@ body {
 
   @include tablets {
     padding: 0 2%;
+  }
+
+  @include phone-max {
+    padding: 0 15px !important;
+  }
+}
+
+.display-none-tablets {
+  @include tablets {
+    display: none;
+  }
+}
+
+.display-none-mobile {
+  @include phone-max {
+    display: none;
+  }
+}
+
+.display-block-mobile {
+  display: none;
+
+  @include phone-max {
+    display: block;
+  }
+}
+
+.display-flex-wrap-mobile {
+  display: none;
+
+  @include phone-max {
+    display: flex !important;
+  }
+}
+
+.display-flex-tablets {
+  display: none;
+
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.display-flex-mobile {
+  display: none;
+
+  @include phone-max {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.display-inline-mobile {
+  display: none;
+
+  @include phone-max {
+    display: inline-block;
   }
 }
 

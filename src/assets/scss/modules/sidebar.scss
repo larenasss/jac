@@ -11,7 +11,21 @@
   }
 
   @include tablets {
-    display: none;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,.35);
+    width: 25%;
+    left: -240px;
+  }
+
+  @include phone-max {
+    width: 50% !important;
+  }
+
+  & .btn {
+    font-size: 12px;
+    padding: 10px;
   }
 }
 
@@ -54,6 +68,10 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @include phone-max {
+    margin-bottom: 10px;
+  }
 }
 
 .sidebar__list {
@@ -67,5 +85,28 @@
 .sidebar__selected {
   @include desktopHeight {
     display: none;
+  }
+}
+
+.logo img {
+  @include tablets {
+    width: 80%;
+  }
+}
+
+.sidebar__close {
+  display: none;
+
+  @include tablets {
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    opacity: .5;
   }
 }

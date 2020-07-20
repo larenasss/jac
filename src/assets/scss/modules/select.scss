@@ -6,6 +6,10 @@
   border-radius: 0;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.81);
   padding: 9px 30px 9px 12px;
+
+  @include phone-middle {
+    font-size: 12px !important;
+  }
 }
 
 .select-filter ul {

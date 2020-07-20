@@ -13,6 +13,10 @@
     margin-top: 20px;
     padding: 50px 20px;
   }
+
+  @include phone-max {
+    padding: 40px 15px;
+  }
 }
 
 .footer__office {
@@ -24,15 +28,28 @@
 .footer__managers {
   padding-bottom: 30px;
   border-bottom: 1px solid rgba(0,0,0,.1);
+
+  @include phone-max {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }
 
 .footer__bottom {
   padding-top: 30px;
   display: flex;
+
+  @include phone-max {
+    display: none;
+  }
 }
 
 .footer__info {
   width: 25%;
+
+  @include phone-max {
+    display: none;
+  }
 }
 
 .footer__logo {
@@ -49,6 +66,10 @@
 
   @include tablets {
     padding: 0 20px;
+  }
+
+  @include phone-max {
+    display: none;
   }
 }
 

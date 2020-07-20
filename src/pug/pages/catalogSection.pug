@@ -13,7 +13,19 @@ html(lang="en")
     .container
       header.header.header--no-size
         +image('content/catalog_bg_header.png', 'header__img')
-        .header__body.header__body.center
+        .header__top
+          button.header__btn
+            ul
+              li
+              li
+              li
+          .header__top-logo
+            +image('content/logo.png', 'logo__img')
+          .header__top-phone
+            .phone
+              a.phone__link(href="tel:+78002509946") 8 800 250 9946
+              span Звонок по ФР бесплатный
+        .header__body.center
           .header__desc.header__desc--no-margin
             h2.title.title--header Каталог
       .page-content
@@ -50,248 +62,252 @@ html(lang="en")
                       option(value="") По умолчанию
                       option(value="") 200
                       option(value="") 300
-            .catalog__body
-              ul.equipment.equipment--catalog-section
-                li
-                  .equipment__content
-                    .equipment__body
-                      +image('content/catalog_item_1.png', 'equipment__img')
-                    .equipment__footer
-                      .equipment__title CPCD 15 H (10т)
-                      .equiment__desc
-                        .equiment__item
-                          .equiment__item-title Грузоподъемность
-                          .equiment__item-desc 1500 кг
-                        .equiment__item
-                          .equiment__item-title Высота подъема
-                          .equiment__item-desc 2 м
-                        .equiment__item
-                          .equiment__item-title Радиус разворота
-                          .equiment__item-desc 90°
-                        .equiment__item
-                          .equiment__item-title Тип двигателя
-                          .equiment__item-desc Бензиновый (2.0л)
-                        .equiment__item
-                          .equiment__item-title Гарантия
-                          .equiment__item-desc 2 года
-                      .equipment__btn
-                        a(href="./cart.html").btn.btn--width-big Подробнее
-                li
-                  .equipment__content
-                    .equipment__body
-                      +image('content/catalog_item_1.png', 'equipment__img')
-                    .equipment__footer
-                      .equipment__title CPCD 15 H (10т)
-                      .equiment__desc
-                        .equiment__item
-                          .equiment__item-title Грузоподъемность
-                          .equiment__item-desc 1500 кг
-                        .equiment__item
-                          .equiment__item-title Высота подъема
-                          .equiment__item-desc 2 м
-                        .equiment__item
-                          .equiment__item-title Радиус разворота
-                          .equiment__item-desc 90°
-                        .equiment__item
-                          .equiment__item-title Тип двигателя
-                          .equiment__item-desc Бензиновый (2.0л)
-                        .equiment__item
-                          .equiment__item-title Гарантия
-                          .equiment__item-desc 2 года
-                      .equipment__btn
-                        a(href="./cart.html").btn.btn--width-big Подробнее
-                li
-                  .equipment__content
-                    .equipment__body
-                      +image('content/catalog_item_1.png', 'equipment__img')
-                    .equipment__footer
-                      .equipment__title CPCD 15 H (10т)
-                      .equiment__desc
-                        .equiment__item
-                          .equiment__item-title Грузоподъемность
-                          .equiment__item-desc 1500 кг
-                        .equiment__item
-                          .equiment__item-title Высота подъема
-                          .equiment__item-desc 2 м
-                        .equiment__item
-                          .equiment__item-title Радиус разворота
-                          .equiment__item-desc 90°
-                        .equiment__item
-                          .equiment__item-title Тип двигателя
-                          .equiment__item-desc Бензиновый (2.0л)
-                        .equiment__item
-                          .equiment__item-title Гарантия
-                          .equiment__item-desc 2 года
-                      .equipment__btn
-                        a(href="./cart.html").btn.btn--width-big Подробнее
-                li
-                  .equipment__content
-                    .equipment__body
-                      +image('content/catalog_item_1.png', 'equipment__img')
-                    .equipment__footer
-                      .equipment__title CPCD 15 H (10т)
-                      .equiment__desc
-                        .equiment__item
-                          .equiment__item-title Грузоподъемность
-                          .equiment__item-desc 1500 кг
-                        .equiment__item
-                          .equiment__item-title Высота подъема
-                          .equiment__item-desc 2 м
-                        .equiment__item
-                          .equiment__item-title Радиус разворота
-                          .equiment__item-desc 90°
-                        .equiment__item
-                          .equiment__item-title Тип двигателя
-                          .equiment__item-desc Бензиновый (2.0л)
-                        .equiment__item
-                          .equiment__item-title Гарантия
-                          .equiment__item-desc 2 года
-                      .equipment__btn
-                        a(href="./cart.html").btn.btn--width-big Подробнее
-                li
-                  .equipment__content
-                    .equipment__body
-                      +image('content/catalog_item_1.png', 'equipment__img')
-                    .equipment__footer
-                      .equipment__title CPCD 15 H (10т)
-                      .equiment__desc
-                        .equiment__item
-                          .equiment__item-title Грузоподъемность
-                          .equiment__item-desc 1500 кг
-                        .equiment__item
-                          .equiment__item-title Высота подъема
-                          .equiment__item-desc 2 м
-                        .equiment__item
-                          .equiment__item-title Радиус разворота
-                          .equiment__item-desc 90°
-                        .equiment__item
-                          .equiment__item-title Тип двигателя
-                          .equiment__item-desc Бензиновый (2.0л)
-                        .equiment__item
-                          .equiment__item-title Гарантия
-                          .equiment__item-desc 2 года
-                      .equipment__btn
-                        a(href="./cart.html").btn.btn--width-big Подробнее
-                li
-                  .equipment__content
-                    .equipment__body
-                      +image('content/catalog_item_1.png', 'equipment__img')
-                    .equipment__footer
-                      .equipment__title CPCD 15 H (10т)
-                      .equiment__desc
-                        .equiment__item
-                          .equiment__item-title Грузоподъемность
-                          .equiment__item-desc 1500 кг
-                        .equiment__item
-                          .equiment__item-title Высота подъема
-                          .equiment__item-desc 2 м
-                        .equiment__item
-                          .equiment__item-title Радиус разворота
-                          .equiment__item-desc 90°
-                        .equiment__item
-                          .equiment__item-title Тип двигателя
-                          .equiment__item-desc Бензиновый (2.0л)
-                        .equiment__item
-                          .equiment__item-title Гарантия
-                          .equiment__item-desc 2 года
-                      .equipment__btn
-                        a(href="./cart.html").btn.btn--width-big Подробнее
-                li
-                  .equipment__content
-                    .equipment__body
-                      +image('content/catalog_item_1.png', 'equipment__img')
-                    .equipment__footer
-                      .equipment__title CPCD 15 H (10т)
-                      .equiment__desc
-                        .equiment__item
-                          .equiment__item-title Грузоподъемность
-                          .equiment__item-desc 1500 кг
-                        .equiment__item
-                          .equiment__item-title Высота подъема
-                          .equiment__item-desc 2 м
-                        .equiment__item
-                          .equiment__item-title Радиус разворота
-                          .equiment__item-desc 90°
-                        .equiment__item
-                          .equiment__item-title Тип двигателя
-                          .equiment__item-desc Бензиновый (2.0л)
-                        .equiment__item
-                          .equiment__item-title Гарантия
-                          .equiment__item-desc 2 года
-                      .equipment__btn
-                        a(href="./cart.html").btn.btn--width-big Подробнее
-                li
-                  .equipment__content
-                    .equipment__body
-                      +image('content/catalog_item_1.png', 'equipment__img')
-                    .equipment__footer
-                      .equipment__title CPCD 15 H (10т)
-                      .equiment__desc
-                        .equiment__item
-                          .equiment__item-title Грузоподъемность
-                          .equiment__item-desc 1500 кг
-                        .equiment__item
-                          .equiment__item-title Высота подъема
-                          .equiment__item-desc 2 м
-                        .equiment__item
-                          .equiment__item-title Радиус разворота
-                          .equiment__item-desc 90°
-                        .equiment__item
-                          .equiment__item-title Тип двигателя
-                          .equiment__item-desc Бензиновый (2.0л)
-                        .equiment__item
-                          .equiment__item-title Гарантия
-                          .equiment__item-desc 2 года
-                      .equipment__btn
-                        a(href="./cart.html").btn.btn--width-big Подробнее
-                li
-                  .equipment__content
-                    .equipment__body
-                      +image('content/catalog_item_1.png', 'equipment__img')
-                    .equipment__footer
-                      .equipment__title CPCD 15 H (10т)
-                      .equiment__desc
-                        .equiment__item
-                          .equiment__item-title Грузоподъемность
-                          .equiment__item-desc 1500 кг
-                        .equiment__item
-                          .equiment__item-title Высота подъема
-                          .equiment__item-desc 2 м
-                        .equiment__item
-                          .equiment__item-title Радиус разворота
-                          .equiment__item-desc 90°
-                        .equiment__item
-                          .equiment__item-title Тип двигателя
-                          .equiment__item-desc Бензиновый (2.0л)
-                        .equiment__item
-                          .equiment__item-title Гарантия
-                          .equiment__item-desc 2 года
-                      .equipment__btn
-                        a(href="./cart.html").btn.btn--width-big Подробнее
-                li
-                  .equipment__content
-                    .equipment__body
-                      +image('content/catalog_item_1.png', 'equipment__img')
-                    .equipment__footer
-                      .equipment__title CPCD 15 H (10т)
-                      .equiment__desc
-                        .equiment__item
-                          .equiment__item-title Грузоподъемность
-                          .equiment__item-desc 1500 кг
-                        .equiment__item
-                          .equiment__item-title Высота подъема
-                          .equiment__item-desc 2 м
-                        .equiment__item
-                          .equiment__item-title Радиус разворота
-                          .equiment__item-desc 90°
-                        .equiment__item
-                          .equiment__item-title Тип двигателя
-                          .equiment__item-desc Бензиновый (2.0л)
-                        .equiment__item
-                          .equiment__item-title Гарантия
-                          .equiment__item-desc 2 года
-                      .equipment__btn
-                        a(href="./cart.html").btn.btn--width-big Подробнее
+            .slider
+              .catalog__body.swiper-container-one-mobile
+                ul.equipment.equipment--catalog-section
+                  li
+                    .equipment__content
+                      .equipment__body
+                        +image('content/catalog_item_1.png', 'equipment__img')
+                      .equipment__footer
+                        .equipment__title CPCD 15 H (10т)
+                        .equiment__desc
+                          .equiment__item
+                            .equiment__item-title Грузоподъемность
+                            .equiment__item-desc 1500 кг
+                          .equiment__item
+                            .equiment__item-title Высота подъема
+                            .equiment__item-desc 2 м
+                          .equiment__item
+                            .equiment__item-title Радиус разворота
+                            .equiment__item-desc 90°
+                          .equiment__item
+                            .equiment__item-title Тип двигателя
+                            .equiment__item-desc Бензиновый (2.0л)
+                          .equiment__item
+                            .equiment__item-title Гарантия
+                            .equiment__item-desc 2 года
+                        .equipment__btn
+                          a(href="./cart.html").btn.btn--width-big Подробнее
+                  li
+                    .equipment__content
+                      .equipment__body
+                        +image('content/catalog_item_1.png', 'equipment__img')
+                      .equipment__footer
+                        .equipment__title CPCD 15 H (10т)
+                        .equiment__desc
+                          .equiment__item
+                            .equiment__item-title Грузоподъемность
+                            .equiment__item-desc 1500 кг
+                          .equiment__item
+                            .equiment__item-title Высота подъема
+                            .equiment__item-desc 2 м
+                          .equiment__item
+                            .equiment__item-title Радиус разворота
+                            .equiment__item-desc 90°
+                          .equiment__item
+                            .equiment__item-title Тип двигателя
+                            .equiment__item-desc Бензиновый (2.0л)
+                          .equiment__item
+                            .equiment__item-title Гарантия
+                            .equiment__item-desc 2 года
+                        .equipment__btn
+                          a(href="./cart.html").btn.btn--width-big Подробнее
+                  li
+                    .equipment__content
+                      .equipment__body
+                        +image('content/catalog_item_1.png', 'equipment__img')
+                      .equipment__footer
+                        .equipment__title CPCD 15 H (10т)
+                        .equiment__desc
+                          .equiment__item
+                            .equiment__item-title Грузоподъемность
+                            .equiment__item-desc 1500 кг
+                          .equiment__item
+                            .equiment__item-title Высота подъема
+                            .equiment__item-desc 2 м
+                          .equiment__item
+                            .equiment__item-title Радиус разворота
+                            .equiment__item-desc 90°
+                          .equiment__item
+                            .equiment__item-title Тип двигателя
+                            .equiment__item-desc Бензиновый (2.0л)
+                          .equiment__item
+                            .equiment__item-title Гарантия
+                            .equiment__item-desc 2 года
+                        .equipment__btn
+                          a(href="./cart.html").btn.btn--width-big Подробнее
+                  li
+                    .equipment__content
+                      .equipment__body
+                        +image('content/catalog_item_1.png', 'equipment__img')
+                      .equipment__footer
+                        .equipment__title CPCD 15 H (10т)
+                        .equiment__desc
+                          .equiment__item
+                            .equiment__item-title Грузоподъемность
+                            .equiment__item-desc 1500 кг
+                          .equiment__item
+                            .equiment__item-title Высота подъема
+                            .equiment__item-desc 2 м
+                          .equiment__item
+                            .equiment__item-title Радиус разворота
+                            .equiment__item-desc 90°
+                          .equiment__item
+                            .equiment__item-title Тип двигателя
+                            .equiment__item-desc Бензиновый (2.0л)
+                          .equiment__item
+                            .equiment__item-title Гарантия
+                            .equiment__item-desc 2 года
+                        .equipment__btn
+                          a(href="./cart.html").btn.btn--width-big Подробнее
+                  li
+                    .equipment__content
+                      .equipment__body
+                        +image('content/catalog_item_1.png', 'equipment__img')
+                      .equipment__footer
+                        .equipment__title CPCD 15 H (10т)
+                        .equiment__desc
+                          .equiment__item
+                            .equiment__item-title Грузоподъемность
+                            .equiment__item-desc 1500 кг
+                          .equiment__item
+                            .equiment__item-title Высота подъема
+                            .equiment__item-desc 2 м
+                          .equiment__item
+                            .equiment__item-title Радиус разворота
+                            .equiment__item-desc 90°
+                          .equiment__item
+                            .equiment__item-title Тип двигателя
+                            .equiment__item-desc Бензиновый (2.0л)
+                          .equiment__item
+                            .equiment__item-title Гарантия
+                            .equiment__item-desc 2 года
+                        .equipment__btn
+                          a(href="./cart.html").btn.btn--width-big Подробнее
+                  li
+                    .equipment__content
+                      .equipment__body
+                        +image('content/catalog_item_1.png', 'equipment__img')
+                      .equipment__footer
+                        .equipment__title CPCD 15 H (10т)
+                        .equiment__desc
+                          .equiment__item
+                            .equiment__item-title Грузоподъемность
+                            .equiment__item-desc 1500 кг
+                          .equiment__item
+                            .equiment__item-title Высота подъема
+                            .equiment__item-desc 2 м
+                          .equiment__item
+                            .equiment__item-title Радиус разворота
+                            .equiment__item-desc 90°
+                          .equiment__item
+                            .equiment__item-title Тип двигателя
+                            .equiment__item-desc Бензиновый (2.0л)
+                          .equiment__item
+                            .equiment__item-title Гарантия
+                            .equiment__item-desc 2 года
+                        .equipment__btn
+                          a(href="./cart.html").btn.btn--width-big Подробнее
+                  li
+                    .equipment__content
+                      .equipment__body
+                        +image('content/catalog_item_1.png', 'equipment__img')
+                      .equipment__footer
+                        .equipment__title CPCD 15 H (10т)
+                        .equiment__desc
+                          .equiment__item
+                            .equiment__item-title Грузоподъемность
+                            .equiment__item-desc 1500 кг
+                          .equiment__item
+                            .equiment__item-title Высота подъема
+                            .equiment__item-desc 2 м
+                          .equiment__item
+                            .equiment__item-title Радиус разворота
+                            .equiment__item-desc 90°
+                          .equiment__item
+                            .equiment__item-title Тип двигателя
+                            .equiment__item-desc Бензиновый (2.0л)
+                          .equiment__item
+                            .equiment__item-title Гарантия
+                            .equiment__item-desc 2 года
+                        .equipment__btn
+                          a(href="./cart.html").btn.btn--width-big Подробнее
+                  li
+                    .equipment__content
+                      .equipment__body
+                        +image('content/catalog_item_1.png', 'equipment__img')
+                      .equipment__footer
+                        .equipment__title CPCD 15 H (10т)
+                        .equiment__desc
+                          .equiment__item
+                            .equiment__item-title Грузоподъемность
+                            .equiment__item-desc 1500 кг
+                          .equiment__item
+                            .equiment__item-title Высота подъема
+                            .equiment__item-desc 2 м
+                          .equiment__item
+                            .equiment__item-title Радиус разворота
+                            .equiment__item-desc 90°
+                          .equiment__item
+                            .equiment__item-title Тип двигателя
+                            .equiment__item-desc Бензиновый (2.0л)
+                          .equiment__item
+                            .equiment__item-title Гарантия
+                            .equiment__item-desc 2 года
+                        .equipment__btn
+                          a(href="./cart.html").btn.btn--width-big Подробнее
+                  li
+                    .equipment__content
+                      .equipment__body
+                        +image('content/catalog_item_1.png', 'equipment__img')
+                      .equipment__footer
+                        .equipment__title CPCD 15 H (10т)
+                        .equiment__desc
+                          .equiment__item
+                            .equiment__item-title Грузоподъемность
+                            .equiment__item-desc 1500 кг
+                          .equiment__item
+                            .equiment__item-title Высота подъема
+                            .equiment__item-desc 2 м
+                          .equiment__item
+                            .equiment__item-title Радиус разворота
+                            .equiment__item-desc 90°
+                          .equiment__item
+                            .equiment__item-title Тип двигателя
+                            .equiment__item-desc Бензиновый (2.0л)
+                          .equiment__item
+                            .equiment__item-title Гарантия
+                            .equiment__item-desc 2 года
+                        .equipment__btn
+                          a(href="./cart.html").btn.btn--width-big Подробнее
+                  li
+                    .equipment__content
+                      .equipment__body
+                        +image('content/catalog_item_1.png', 'equipment__img')
+                      .equipment__footer
+                        .equipment__title CPCD 15 H (10т)
+                        .equiment__desc
+                          .equiment__item
+                            .equiment__item-title Грузоподъемность
+                            .equiment__item-desc 1500 кг
+                          .equiment__item
+                            .equiment__item-title Высота подъема
+                            .equiment__item-desc 2 м
+                          .equiment__item
+                            .equiment__item-title Радиус разворота
+                            .equiment__item-desc 90°
+                          .equiment__item
+                            .equiment__item-title Тип двигателя
+                            .equiment__item-desc Бензиновый (2.0л)
+                          .equiment__item
+                            .equiment__item-title Гарантия
+                            .equiment__item-desc 2 года
+                        .equipment__btn
+                          a(href="./cart.html").btn.btn--width-big Подробнее
+              .slider-button.slider-button--mobile.display-block-mobile
+                button.slider-button__item.slider-button__item--prev.prev-one-mobile
+                button.slider-button__item.slider-button__item--next.next-one-mobile
             .catalog__paginations
               .pagination
                 a(href="").pagination__btn.pagination__btn--bold первая

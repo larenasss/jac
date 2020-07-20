@@ -11,8 +11,21 @@ html(lang="en")
   .maincontent
     include ../includes/sidebar
     .container
-      header.header.header--cart.header--no-size 
-        h2.title.title--header CPDC15 (10т)
+      header.header.header--no-size
+        .header__top
+          button.header__btn
+            ul
+              li
+              li
+              li
+          .header__top-logo
+            +image('content/logo.png', 'logo__img')
+          .header__top-phone
+            .phone
+              a.phone__link(href="tel:+78002509946") 8 800 250 9946
+              span Звонок по ФР бесплатный
+        .header__bottom
+          h2.title.title--header CPDC15 (10т)
       .page-content
         .breadcrumb
           ul.breadcrumb__list
@@ -24,12 +37,31 @@ html(lang="en")
               a(href="").breadcrumb__link Автопогрузчики -
             li.breadcrumb__item.breadcrumb__item--active
               a(href="").breadcrumb__link CPDC15
-        section.section.cart
+        section.cart
           .cart__content
             .cart__header
               .cart__header-left
                 .cart__header-pic
-                  +image('content/cart_item.png', 'cart__header-img')
+                  .swiper-container.gallery-top
+                    .swiper-wrapper
+                      .swiper-slide
+                        +image('content/cart_item.png', 'cart__header-img')
+                      .swiper-slide
+                        +image('content/cart_item.png', 'cart__header-img')
+                      .swiper-slide
+                        +image('content/cart_item.png', 'cart__header-img')
+                      .swiper-slide
+                        +image('content/cart_item.png', 'cart__header-img')
+                  .swiper-container.gallery-thumbs
+                    .swiper-wrapper
+                      .swiper-slide
+                        +image('content/cart_item.png', 'cart__header-img')
+                      .swiper-slide
+                        +image('content/cart_item.png', 'cart__header-img')
+                      .swiper-slide
+                        +image('content/cart_item.png', 'cart__header-img')
+                      .swiper-slide
+                        +image('content/cart_item.png', 'cart__header-img')
                 .cart__header-paginations
               .cart__header-right
                 .cart__header-title Спецификация:
@@ -62,125 +94,138 @@ html(lang="en")
                   button.btn.btn--no-bg Рассчитать в лизинг
             .cart__body
               h3.item-title.item-title--cart.item-title--big-size Технические характеристики:
-              .cart__body-content
-                .cart__body-left
-                  ul.cart__body-list
-                    li.cart__body-item
-                      ul.description-list
-                        li.description-list__item
-                          .description-list__title Центр тяжести груза:
-                          .description-list__desc 500 mm
-                        li.description-list__item
-                          .description-list__title Высота подъема мачты:
-                          .description-list__desc 3000 mm
-                        li.description-list__item
-                          .description-list__title Свободный ход мачты:
-                          .description-list__desc 155 mm
-                        li.description-list__item
-                          .description-list__title Угол наклона мачты (вперед-назад):
-                          .description-list__desc 6°/ 12°
-                        li.description-list__item
-                          .description-list__title Длинна вил:
-                          .description-list__desc 770 mm
-                        li.description-list__item
-                          .description-list__title Ширина:
-                          .description-list__desc 1070 mm
-                        li.description-list__item
-                          .description-list__title Высота (по защитной крыше):
-                          .description-list__desc 2070 mm
-                        li.description-list__item
-                          .description-list__title Скорость движения с грузом:
-                          .description-list__desc 13.5 км/ч
-                        li.description-list__item
-                          .description-list__title Радиус поворота:
-                          .description-list__desc 1880 mm
-                        li.description-list__item
-                          .description-list__title Скорость подъема мачты (под нагрузкой):
-                          .description-list__desc 590 мм/с
-                        li.description-list__item
-                          .description-list__title Масса:
-                          .description-list__desc 2220 кг
-                    li.cart__body-item
-                      .cart__body-title Внешние размеры:
-                      ul.description-list
-                        li.description-list__item
-                          .description-list__title Длинна (без вил):
-                          .description-list__desc 500 mm
-                        li.description-list__item
-                          .description-list__title Высота выдвинутой мачты:
-                          .description-list__desc 4030 мм
-                        li.description-list__item
-                          .description-list__title Передний свес:
-                          .description-list__desc 421 мм
-                .cart__body-right
-                  ul.cart__body-list
-                    li.cart__body-item
-                      ul.description-list
-                        li.description-list__item
-                          .description-list__title Длинна (без вил):
-                          .description-list__desc 500 mm
-                        li.description-list__item
-                          .description-list__title Высота выдвинутой мачты:
-                          .description-list__desc 4030 мм
-                        li.description-list__item
-                          .description-list__title Передний свес:
-                          .description-list__desc 421 мм
-                    li.cart__body-item
-                      .cart__body-title Ширина протектора:
-                      ul.description-list
-                        li.description-list__item
-                          .description-list__title Передние шины:
-                          .description-list__desc 6.50-1 0-1 ОРЯ
-                        li.description-list__item
-                          .description-list__title Задние шины:
-                          .description-list__desc 5.00-8-1 ОРП
-                        li.description-list__item
-                          .description-list__title Колёсная база:
-                          .description-list__desc 1 400 мм
-                        li.description-list__item
-                          .description-list__title Колея передняя:
-                          .description-list__desc 890 мм
-                        li.description-list__item
-                          .description-list__title Колея задняя:
-                          .description-list__desc 920 мм
-                        li.description-list__item
-                          .description-list__title Дорожны просвет:
-                          .description-list__desc 11.5мм
-                    li.cart__body-item
-                      .cart__body-title Двигатель:
-                      ul.description-list
-                        li.description-list__item
-                          .description-list__title Модель:
-                          .description-list__desc <Зиапр1пд4У
-                        li.description-list__item
-                          .description-list__title Число оборотов двигателя:
-                          .description-list__desc 159 об/мин
-                        li.description-list__item
-                          .description-list__title Номинальная мощность:
-                          .description-list__desc 35.7 кВт
+              .cart__body-show
+                input(type="checkbox" id='show')
+                label(for="show").cart__body-btn.btn Развернуть
+                .cart__body-content
+                  .cart__body-left
+                    ul.cart__body-list
+                      li.cart__body-item
+                        ul.description-list
+                          li.description-list__item
+                            .description-list__title Центр тяжести груза:
+                            .description-list__desc 500 mm
+                          li.description-list__item
+                            .description-list__title Высота подъема мачты:
+                            .description-list__desc 3000 mm
+                          li.description-list__item
+                            .description-list__title Свободный ход мачты:
+                            .description-list__desc 155 mm
+                          li.description-list__item
+                            .description-list__title Угол наклона мачты (вперед-назад):
+                            .description-list__desc 6°/ 12°
+                          li.description-list__item
+                            .description-list__title Длинна вил:
+                            .description-list__desc 770 mm
+                          li.description-list__item
+                            .description-list__title Ширина:
+                            .description-list__desc 1070 mm
+                          li.description-list__item
+                            .description-list__title Высота (по защитной крыше):
+                            .description-list__desc 2070 mm
+                          li.description-list__item
+                            .description-list__title Скорость движения с грузом:
+                            .description-list__desc 13.5 км/ч
+                          li.description-list__item
+                            .description-list__title Радиус поворота:
+                            .description-list__desc 1880 mm
+                          li.description-list__item
+                            .description-list__title Скорость подъема мачты (под нагрузкой):
+                            .description-list__desc 590 мм/с
+                          li.description-list__item
+                            .description-list__title Масса:
+                            .description-list__desc 2220 кг
+                      li.cart__body-item
+                        .cart__body-title Внешние размеры:
+                        ul.description-list
+                          li.description-list__item
+                            .description-list__title Длинна (без вил):
+                            .description-list__desc 500 mm
+                          li.description-list__item
+                            .description-list__title Высота выдвинутой мачты:
+                            .description-list__desc 4030 мм
+                          li.description-list__item
+                            .description-list__title Передний свес:
+                            .description-list__desc 421 мм
+                  .cart__body-right
+                    ul.cart__body-list
+                      li.cart__body-item
+                        ul.description-list
+                          li.description-list__item
+                            .description-list__title Длинна (без вил):
+                            .description-list__desc 500 mm
+                          li.description-list__item
+                            .description-list__title Высота выдвинутой мачты:
+                            .description-list__desc 4030 мм
+                          li.description-list__item
+                            .description-list__title Передний свес:
+                            .description-list__desc 421 мм
+                      li.cart__body-item
+                        .cart__body-title Ширина протектора:
+                        ul.description-list
+                          li.description-list__item
+                            .description-list__title Передние шины:
+                            .description-list__desc 6.50-1 0-1 ОРЯ
+                          li.description-list__item
+                            .description-list__title Задние шины:
+                            .description-list__desc 5.00-8-1 ОРП
+                          li.description-list__item
+                            .description-list__title Колёсная база:
+                            .description-list__desc 1 400 мм
+                          li.description-list__item
+                            .description-list__title Колея передняя:
+                            .description-list__desc 890 мм
+                          li.description-list__item
+                            .description-list__title Колея задняя:
+                            .description-list__desc 920 мм
+                          li.description-list__item
+                            .description-list__title Дорожны просвет:
+                            .description-list__desc 11.5мм
+                      li.cart__body-item
+                        .cart__body-title Двигатель:
+                        ul.description-list
+                          li.description-list__item
+                            .description-list__title Модель:
+                            .description-list__desc <Зиапр1пд4У
+                          li.description-list__item
+                            .description-list__title Число оборотов двигателя:
+                            .description-list__desc 159 об/мин
+                          li.description-list__item
+                            .description-list__title Номинальная мощность:
+                            .description-list__desc 35.7 кВт
           .cart__additionally
             h3.item-title.item-title--cart.item-title--big-size Дополнительное оборудование
-            ul.additionally
-              li.additionally__item
-                .additionally__pic
-                  +image('content/additionally_item.png', 'additionally__img')
-                a(href="").additionally__desc Кабина с отоплением
-              li.additionally__item
-                .additionally__pic
-                  +image('content/additionally_item.png', 'additionally__img')
-                a(href="").additionally__desc Кабина с отоплением
-              li.additionally__item
-                .additionally__pic
-                  +image('content/additionally_item.png', 'additionally__img')
-                a(href="").additionally__desc Кабина с отоплением
-              li.additionally__item
-                .additionally__pic
-                  +image('content/additionally_item.png', 'additionally__img')
-                a(href="").additionally__desc Кабина с отоплением
-              li.additionally__item
-                .additionally__pic
-                  +image('content/additionally_item.png', 'additionally__img')
-                a(href="").additionally__desc Кабина с отоплением
+            .slider
+              .additionally.swiper-container-one-mobile
+                ul.additionally__list
+                  li.additionally__item
+                    .additionally__body
+                      .additionally__pic
+                        +image('content/additionally_item.png', 'additionally__img')
+                      a(href="").additionally__desc Кабина с отоплением
+                  li.additionally__item
+                    .additionally__body
+                      .additionally__pic
+                        +image('content/additionally_item.png', 'additionally__img')
+                      a(href="").additionally__desc Кабина с отоплением
+                  li.additionally__item
+                    .additionally__body
+                      .additionally__pic
+                        +image('content/additionally_item.png', 'additionally__img')
+                      a(href="").additionally__desc Кабина с отоплением
+                  li.additionally__item
+                    .additionally__body
+                      .additionally__pic
+                        +image('content/additionally_item.png', 'additionally__img')
+                      a(href="").additionally__desc Кабина с отоплением
+                  li.additionally__item
+                    .additionally__body
+                      .additionally__pic
+                        +image('content/additionally_item.png', 'additionally__img')
+                      a(href="").additionally__desc Кабина с отоплением
+              .slider-button.slider-button--cart-cab.display-block-mobile
+                button.slider-button__item.slider-button__item--prev.prev-one-mobile
+                button.slider-button__item.slider-button__item--next.next-one-mobile
           .cart__recommendations
             h3.item-title.item-title--cart.item-title--big-size Рекомендованные позиции
             ul.equipment.equipment--cart
@@ -225,8 +270,8 @@ html(lang="en")
                     .equipment__btn.equipment__btn--cart
                       button.btn.btn--width-big Подробнее
             .slider-button.slider-button--cart
-              button.slider-button__item.slider-button__item--prev
-              button.slider-button__item.slider-button__item--next
+              button.slider-button__item.slider-button__item--prev.slider-button__item-c-next
+              button.slider-button__item.slider-button__item--next.slider-button__item-c-prev
           .cart__questions
             h3.item-title.item-title--cart.item-title--big-size Ответы на вопросы
             ul.questions
@@ -272,6 +317,15 @@ html(lang="en")
                 label(for="a7")
                 .questions__desc
                   p Двигатели Jac, Isuzu, Perkins, Nissan, Mitsubishi и другие.
+          section.section.request
+            h2.request__title.request__title--size-34 ОСТАЛИСЬ ВОПРОСЫ?
+              .request__sub-title Оставьте заявку и мы на них ответим
+            .request__content
+              form.request__form(action="")
+                  input(type="text", placeholder="Ваше имя").input  
+                  input(type="text", placeholder="Ваш телефон").input
+                  input(type="text", placeholder="Ваш Еmail").input.display-block-mobile
+                  button(type="submit").btn.btn--request Оставить заявку
   include ../includes/footer
                 
                 

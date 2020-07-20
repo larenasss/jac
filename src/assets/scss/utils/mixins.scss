@@ -4,6 +4,9 @@ $bp-desktop: 1400px;
 $bp-net-book: 1200px;
 $bp-laptop: 992px;
 $bp-tablets: 768px;
+$bp-phone-max: 480px;
+$bp-phone-middle: 430px;
+$bp-phone-small: 340px;
 
 @mixin desktopHeight {
   @media only screen and (max-height: $bp-desktopHeight) {
@@ -37,6 +40,24 @@ $bp-tablets: 768px;
 
 @mixin tablets {
   @media only screen and (max-width: $bp-tablets) {
+    @content;
+  }
+}
+
+@mixin phone-max {
+  @media only screen and (max-width: $bp-phone-max) {
+    @content;
+  }
+}
+
+@mixin phone-middle {
+  @media only screen and (max-width: $bp-phone-middle) {
+    @content;
+  }
+}
+
+@mixin phone-small {
+  @media only screen and (max-width: $bp-phone-small) {
     @content;
   }
 }

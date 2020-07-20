@@ -9,6 +9,10 @@
   @include desktopHd {
     font-size: 16px;
   }
+
+  @include phone-max {
+    display: none;
+  }
 }
 
 .breadcrumb__list {

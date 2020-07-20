@@ -29,7 +29,11 @@
       height: 100%;
     }
   }
+}
 
+.tender__content .swiper-slide {
+  flex-direction: row;
+  align-items: unset;
 }
 
 .tender__content .list-info__item {

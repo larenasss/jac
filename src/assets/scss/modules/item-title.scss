@@ -1,36 +1,43 @@
 .item-title {
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   font-size: 56px;
   font-weight: bold;
   position: relative;
   display: inline-block;
-  padding-bottom: 5px;
-  border-bottom: 3px solid #ed1c24;
+  padding-bottom: 8px;
   width: fit-content;
+  position: relative;
+
+  background-image: linear-gradient(to right,#cc2228 100%, transparent 75%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 100% 3px;
 
   @include desktopHd {
     font-size: 34px;
   }
-
-  @include laptop {
-    margin-bottom: 20px;
-  }
   
   @include tablets {
     font-size: 26px;
-    margin-bottom: 15px;
+  }
+  
+  @include phone-max {
+    text-transform: uppercase;
+    line-height: 1.31;
+    margin-bottom: 30px;
   }
 
   &--no-style {
-    border: none;
-    margin: 0 !important;
-    display: block;
+    background-image: none;
+    margin-bottom: 0 !important;
+    display: inline-block;
+    padding: 0;
   }
 
   &--center {
     display: block;
     text-align: center;
-    border-bottom: none;
+    background-image: none;
   }
 
   &--size-26px {
@@ -57,5 +64,7 @@
 }
 
 .item-title-box {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }

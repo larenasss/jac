@@ -3,6 +3,10 @@
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.61);
   font-size: 14px;
   max-height: 47px;
+
+  @include phone-max {
+    display: none;
+  }
 }
 
 .pagination__list {

@@ -15,8 +15,11 @@
     height: 42px;
   }
 
-  @include laptop {
-    font-size: 10px;
+  @include phone-max {
+    max-width: 330px;
+    font-size: 16px;
+    padding: 22px;
+    height: auto;
   }
 
   &--width-big {
@@ -28,6 +31,11 @@
     color: #ed1c24;
     background-color: #ffffff;
     margin-left: 30px;
+
+    @include phone-max {
+      margin-left: 0;
+      margin-top: 20px;
+    }
   }
 }
 

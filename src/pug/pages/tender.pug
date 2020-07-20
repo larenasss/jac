@@ -13,12 +13,24 @@ html(lang="en")
     .container
       header.header
         +image('content/tender_bg_header.png', 'header__img')
+        .header__top
+          button.header__btn
+            ul
+              li
+              li
+              li
+          .header__top-logo
+            +image('content/logo.png', 'logo__img')
+          .header__top-phone
+            .phone
+              a.phone__link(href="tel:+78002509946") 8 800 250 9946
+              span Звонок по ФР бесплатный
         .header__body.header__body.center 
           .header__desc
             h2.title.title--header Готовы участвовать в государственных
               br
               | и коммерческих тендерах
-        .header__info
+        .header__info.display-none-tablets
           ul.info
             li.info__item
               .info__item-pic
@@ -49,11 +61,12 @@ html(lang="en")
                 | Имеем многолетний опыт
               li(data-index='2') Полностью подготавливаем техническое задание для клиента
               li(data-index='3') При необходимости можем выслать коммерческое предложение от партнеров
-            .slider  
+            .slider
+              h3.item-title.display-inline-mobile Наши КЕЙСЫ
               .swiper-container.swiper-container-one
                 .swiper-wrapper
                   .swiper-slide
-                    h3.tender__title НАШИ  КЕЙСЫ 1
+                    h3.tender__title.display-none-mobile НАШИ  КЕЙСЫ 1
                     .list-info__item
                       .list-info__content
                         .list-info__desc.list-info__desc--text
@@ -66,7 +79,7 @@ html(lang="en")
                         .list-info__pic
                           +image('content/tender-item-1.png', 'list-info__img')
                   .swiper-slide
-                    h3.tender__title НАШИ  КЕЙСЫ 2
+                    h3.tender__title.display-none-mobile НАШИ  КЕЙСЫ 2
                     .list-info__item
                       .list-info__content
                         .list-info__desc.list-info__desc--text
@@ -79,7 +92,7 @@ html(lang="en")
                         .list-info__pic
                           +image('content/tender-item-1.png', 'list-info__img')
                   .swiper-slide
-                    h3.tender__title НАШИ  КЕЙСЫ 3
+                    h3.tender__title.display-none-mobile НАШИ  КЕЙСЫ 3
                     .list-info__item
                       .list-info__content
                         .list-info__desc.list-info__desc--text
@@ -92,7 +105,7 @@ html(lang="en")
                         .list-info__pic
                           +image('content/tender-item-1.png', 'list-info__img')
                   .swiper-slide
-                    h3.tender__title НАШИ  КЕЙСЫ 3
+                    h3.tender__title.display-none-mobile НАШИ  КЕЙСЫ 3
                     .list-info__item
                       .list-info__content
                         .list-info__desc.list-info__desc--text
@@ -105,7 +118,7 @@ html(lang="en")
                         .list-info__pic
                           +image('content/tender-item-1.png', 'list-info__img')
                   .swiper-slide
-                    h3.tender__title НАШИ  КЕЙСЫ 3
+                    h3.tender__title.display-none-mobile НАШИ  КЕЙСЫ 3
                     .list-info__content
                       .list-info__desc.list-info__desc--text
                         h4 ПОСТАВКА ОБОРУДОВАНИЯ ДЛЯ СКЛАДА КОМПАНИ "
@@ -117,7 +130,7 @@ html(lang="en")
                       .list-info__pic
                         +image('content/tender-item-1.png', 'list-info__img')
                   .swiper-slide
-                    h3.tender__title НАШИ  КЕЙСЫ 3
+                    h3.tender__title.display-none-mobile НАШИ  КЕЙСЫ 3
                     .list-info__content
                       .list-info__desc.list-info__desc--text
                         h4 ПОСТАВКА ОБОРУДОВАНИЯ ДЛЯ СКЛАДА КОМПАНИ "
@@ -129,7 +142,7 @@ html(lang="en")
                       .list-info__pic
                         +image('content/tender-item-1.png', 'list-info__img')
                   .swiper-slide
-                    h3.tender__title НАШИ  КЕЙСЫ 3
+                    h3.tender__title.display-none-mobile НАШИ  КЕЙСЫ 3
                     .list-info__content
                       .list-info__desc.list-info__desc--text
                         h4 ПОСТАВКА ОБОРУДОВАНИЯ ДЛЯ СКЛАДА КОМПАНИ "
@@ -141,7 +154,7 @@ html(lang="en")
                       .list-info__pic
                         +image('content/tender-item-1.png', 'list-info__img')
                   .swiper-slide
-                    h3.tender__title НАШИ  КЕЙСЫ 3
+                    h3.tender__title.display-none-mobile НАШИ  КЕЙСЫ 3
                     .list-info__content
                       .list-info__desc.list-info__desc--text
                         h4 ПОСТАВКА ОБОРУДОВАНИЯ ДЛЯ СКЛАДА КОМПАНИ "
@@ -163,5 +176,6 @@ html(lang="en")
                 form.request__form(action="")
                     input(type="text", placeholder="Ваше имя").input  
                     input(type="text", placeholder="Ваш телефон").input
+                    input(type="text", placeholder="Ваш Email").input.display-block-mobile
                     button(type="submit").btn Оставить заявку
   include ../includes/footer

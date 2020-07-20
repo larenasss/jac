@@ -13,23 +13,31 @@ html(lang="ru_RU")
     .container
       header.header
         +image('content/main_bg.png', 'header__img')
+        .header__top
+          button.header__btn
+            ul
+              li
+              li
+              li
+          .header__top-logo
+            +image('content/logo.png', 'logo__img')
+          .header__top-phone
+            .phone
+              a.phone__link(href="tel:+78002509946") 8 800 250 9946
+              span Звонок по ФР бесплатный
         .header__body
-          .header__desc
+          .header__desc.header__desc--margin
             h2.title.title--header.title--color-span Вилочные погрузчики
               span  JAC
               |  c гарантией
               span  5 лет
-              |  и
-              br
-              | Сервисным обслуживанием
-              span в любой точке россии
+              |  и Сервисным обслуживанием
+              span    в любой точке россии
             h2.title.title--header 
               span Возможность самостоятельного
-              |
-              br
               span  прохождения "то" без потери гарантии
-          button.btn Оставить заявку
-        .header__info
+          button.btn.display-none-mobile Оставить заявку
+        .header__info.display-none-tablets
           ul.info.info--guarantee
             li.info__item
               .info__item-pic
@@ -59,6 +67,39 @@ html(lang="ru_RU")
               a(href="").breadcrumb__link Главная - 
             li.breadcrumb__item.breadcrumb__item--active 
               a(href="").breadcrumb__link Гарантия
+        ul.info.info--guarantee.info--mobile.display-flex-tablets
+          li.info__item
+            .info__item-pic
+              +image('icons/parts.png', 'info__item-img')
+            .info__item-desc
+              h3 Бесплатный вызов инженера
+              p Всегда в наличии запчасти на
+                br
+                | сумму 50 млн руб
+          li.info__item
+            .info__item-pic
+              +image('icons/guarantee.png', 'info__item-img')
+            .info__item-desc
+              h3 Гарантия
+              p Гарантия на все погрузчики 5 лет
+                br
+                | или 5 тысяч моточасов
+          li.info__item
+            .info__item-pic
+              +image('icons/engineer.png', 'info__item-img')
+            .info__item-desc
+              h3 Запчасти
+              p Бесплатный выезд сервисного инженера
+                br
+                | по гарантийным случаям
+          li.info__item
+            .info__item-pic
+              +image('icons/engineer.png', 'info__item-img')
+            .info__item-desc
+              h3 Сервисные цетры в 72 городах
+              p Готовы будем заключить договор
+                br
+                | о сервисном обслуживании в любом городе
         .guarantee
           .sub-menu
             ul.sub-menu__list
@@ -73,33 +114,38 @@ html(lang="ru_RU")
               li
                 a(href="#sr5").scroll-to Наши сервисные центры
           .section-right#sr1
-            ul.guarantee__list
-              li
-                .guarantee__body
-                  .guarantee__pic
-                    +image('content/menu-item-1.png', '')
-                  .guarantee__info
-                    .guarantee__title Двигатель внутреннего сгорания
-                    .guarantee__info-desc
-                      span 5 лет
-                      |  или
-                      span  5.000 тыс моточасов
-                  .guarantee__desc
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa esse expedita maiores perspiciatis alias, 
-                    | ullam impedit voluptatibus ipsum neque laborum, adipisci minima, voluptatem explicabo. Vel necessitatibus amet a numquam inventore?
-              li
-                .guarantee__body
-                  .guarantee__pic
-                    +image('content/menu-item-2.png', '')
-                  .guarantee__info
-                    .guarantee__title Двигатель внутреннего сгорания
-                    .guarantee__info-desc
-                      span 5 лет
-                      |  или
-                      span  6.000 тыс моточасов
-                  .guarantee__desc
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa esse expedita maiores perspiciatis alias, 
-                    | ullam impedit voluptatibus ipsum neque laborum, adipisci minima, voluptatem explicabo. Vel necessitatibus amet a numquam inventore?
+            .slider
+              .guarantee__slider.swiper-container-one-mobile
+                ul.guarantee__list
+                  li
+                    .guarantee__body
+                      .guarantee__pic
+                        +image('content/menu-item-1.png', '')
+                      .guarantee__info
+                        .guarantee__title Двигатель внутреннего сгорания
+                        .guarantee__info-desc
+                          span 5 лет
+                          |  или
+                          span  5.000 тыс моточасов
+                      .guarantee__desc
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa esse expedita maiores perspiciatis alias, 
+                        | ullam impedit voluptatibus ipsum neque laborum, adipisci minima, voluptatem explicabo. Vel necessitatibus amet a numquam inventore?
+                  li
+                    .guarantee__body
+                      .guarantee__pic
+                        +image('content/menu-item-2.png', '')
+                      .guarantee__info
+                        .guarantee__title Двигатель внутреннего сгорания
+                        .guarantee__info-desc
+                          span 5 лет
+                          |  или
+                          span  6.000 тыс моточасов
+                      .guarantee__desc
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa esse expedita maiores perspiciatis alias, 
+                        | ullam impedit voluptatibus ipsum neque laborum, adipisci minima, voluptatem explicabo. Vel necessitatibus amet a numquam inventore?
+              .slider-button.slider-button--min.display-block-mobile
+                button.slider-button__item.slider-button__item--prev.prev-one-mobile
+                button.slider-button__item.slider-button__item--next.next-one-mobile
             section.section.request
               h2.request__title.request__title--size-24 Узнать подробнее об условии гарантии
               .request__content
@@ -124,7 +170,7 @@ html(lang="ru_RU")
                               +image('content/guarantee-list-1.png', 'list-info__img')
                             .swiper-slide
                               +image('content/guarantee-list-1.png', 'list-info__img')
-                        .slider-button.slider-button--min
+                        .slider-button.slider-button--14
                           button.slider-button__item.slider-button__item--prev.prev-one
                           button.slider-button__item.slider-button__item--next.next-one
                         .slider__paginations
@@ -148,8 +194,9 @@ html(lang="ru_RU")
                     .list-info__desc.list-info__desc--text.list-info__desc--text--margin
                       Lorem ipsum dolor sit amet, 
                       | consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            h3.item-title.item-title--size-26px#sr5 НАШИ СЕРВИСНЫЕ ЦЕНТРЫ
-            +image('content/guarantee-maps.png', 'list-info__img')
+            .guarantee__service
+              h3.item-title.item-title--size-26px#sr5 НАШИ СЕРВИСНЫЕ ЦЕНТРЫ
+              +image('content/guarantee-maps.png', 'list-info__img')
             section.section.request
               h2.request__title.request__title--size-24 НЕ НАШЛИ СЕРВИСНЫЙ ЦЕНТР В СВОЕМ ГОРОДЕ?
                 .request__sub-title Будем готовы заключить договор о сервисном обслуживании в любом городе

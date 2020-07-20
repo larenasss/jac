@@ -8,6 +8,10 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @include phone-middle {
+    padding: 20px 60px 20px 30px;
+  }
 }
 
 .questions__title {
@@ -43,6 +47,10 @@
   right: 20px;
   top: 14px;
 
+  @include phone-middle {
+    top: 11px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -76,7 +84,7 @@
   transform: rotate(45deg);
 }
 
-.questions__checkbox:checked + label +  .questions__desc {
+.questions__checkbox:checked + label + .questions__desc {
   transition: all .4s;
   transform: scaleY(1);
   max-height: 100px;

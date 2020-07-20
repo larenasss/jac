@@ -22,7 +22,15 @@
 }
 
 .swiper-slide {
-  display: flex;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider__title {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 .swiper-slide img {
@@ -75,6 +83,14 @@
     top: 10px;
     bottom: auto;
     right: 0;
+
+    @include phone-max {
+      left: 50%;
+      transform: translateX(-50%);
+      right: auto;
+      bottom: -60px;
+      top: auto;
+    }
   }
 
   &--left {
@@ -89,6 +105,26 @@
     @include net-book {
       bottom: -30px;
     }
+    
+  }
+
+  &--mobile {
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    bottom: -60px;
+  }
+
+  &--city {
+    bottom: 15px;
+  }
+
+  &--cart-cab {
+    bottom: 13px;
+  }
+
+  &--14 {
+    bottom: -14px;
   }
 }
 
@@ -119,3 +155,4 @@
     transform: rotate(180deg);
   }
 }
+

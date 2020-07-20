@@ -1,10 +1,10 @@
-.additionally {
+.additionally__list {
   display: flex;
   margin-left: -9px;
   margin-right: -9px;
 
   @include net-book {
-    flex-flow: wrap;
+    flex-wrap: wrap;
   }
 
   @include tablets {
@@ -16,11 +16,17 @@
       flex-basis: 32%;
     }
   }
+
+  @include phone-max {
+    flex-wrap: nowrap !important;
+    margin: 0 !important;
+  }
 }
 
 .additionally__item {
   width: 18%;
   padding: 0 9px 9px 9px;
+  display: flex;
 
   @include net-book {
     width: 25%;
@@ -32,7 +38,12 @@
 
   @include tablets {
     width: 32%;
-    margin-bottom: 15px;
+    margin-bottom: 55px;
+  }
+
+  @include phone-max {
+    padding: 1px !important;
+    margin-bottom: 0 !important;
   }
 }
 
@@ -40,10 +51,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 181px;
+  padding: 40px;
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.52);
   background-color: #f7f7f7;
   margin-bottom: 16px;
+  flex: 1;
+  height: 100%;
+
+  @include phone-max {
+    height: 346px;
+    width: 100%;
+  }
+}
+
+.additionally__body {
+  height: 100%;
+  @include phone-max {
+    width: 100%;
+  }
+}
+
+.additionally__img {
+
+  @include phone-max {
+    width: auto !important;
+  }
 }
 
 .additionally__desc {

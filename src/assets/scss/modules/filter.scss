@@ -5,6 +5,10 @@
   @include desktopHd {
     justify-content: space-around;
   }
+
+  @include phone-max {
+    flex-direction: column;
+  }
 }
 
 .filter__select {
@@ -20,6 +24,21 @@
     flex-direction: column;
     margin-right: 0;
   }
+
+  @include phone-max {
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  @include phone-small {
+    flex-direction: column !important;
+    align-items: flex-start;
+  }
 }
 
 .filter__select-title {
@@ -29,5 +48,23 @@
   @include net-book {
     margin-bottom: 15px;
     margin-right: 0;
+  }
+
+  @include phone-max {
+    margin-bottom: 0 !important;
+  }
+
+  @include phone-small {
+    margin-bottom: 15px !important;
+  }
+}
+
+.filter__select-body {
+  @include phone-max {
+    width: 50%;
+  }
+
+  @include phone-small {
+    width: 100%;
   }
 }

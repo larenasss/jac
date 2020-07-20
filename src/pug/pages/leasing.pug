@@ -13,14 +13,27 @@ html(lang="en")
     .container
       header.header
         +image('content/leasing_bg_header.png', 'header__img')
+        .header__top
+          button.header__btn
+            ul
+              li
+              li
+              li
+          .header__top-logo
+            +image('content/logo.png', 'logo__img')
+          .header__top-phone
+            .phone
+              a.phone__link(href="tel:+78002509946") 8 800 250 9946
+              span Звонок по ФР бесплатный
         .header__body
           .header__desc
             h2.title.title--header Вилочные погрузчики в лизинг
+              |
               br
-              span  с авансом от 15%
+              span с авансом от 15%
             h2.title.title--header Ставка по лизингу
               span  от 10%
-        .header__info
+        .header__info.display-none-tablets
           ul.info.info--leasing
             li.info__item
               .info__item-pic
@@ -59,7 +72,7 @@ html(lang="en")
               li
                 a(href="#sr4").scroll-to Наши партнеры
           .section-right.section-right--full
-            .section-margin
+            .section-margin.display-flex-tablets
               form.form-calc.form-calc--leasing
                 .form-calc__content
                   h3.item-title.item-title--no-style.item-title--size-26px#sr1 Расчет условий лизинга
@@ -125,6 +138,25 @@ html(lang="en")
                         input.input(type="text" placeholder="Еmail")
                       li.form-calc__item
                         button.btn Получить расчет
+            ul.info.info--guarantee.info--mobile.display-flex-mobile
+              li.info__item
+                .info__item-pic
+                  +image('icons/parts.png', 'info__item-img')
+                .info__item-desc
+                  p Решение по лизингу
+                    |
+                    br
+                    | за 3 дня
+              li.info__item
+                .info__item-pic
+                  +image('icons/guarantee.png', 'info__item-img')
+                .info__item-desc
+                  p Полное сопровождение сделки
+              li.info__item
+                .info__item-pic
+                  +image('icons/engineer.png', 'info__item-img')
+                .info__item-desc
+                  p 48 лицинзированных партнеров
             .section-margin#sr2
               h3.item-title.item-title--no-style.item-title--size-26px ПОЧЕМУ У НАШИХ КЛИЕНТОВ
               h3.item-title.item-title--size-26px УСЛОВИЯ ПО ЛИЗИНГУ ВЫГОДНЕЕ?
@@ -179,6 +211,14 @@ html(lang="en")
                 li
                   +image('content/leasing_partners_logo_15.png', '')
             .partners__btn
-              a(href="") И еще 33 партнера       
+              a(href="") И еще 33 партнера 
+            section.section.request.display-block-mobile
+              h2.request__title.request__title--size-24 РАССЧИТАТЬ ЛИЗИНГ
+              .request__content
+                form.request__form(action="")
+                  input(type="text", placeholder="Ваше имя").input  
+                  input(type="text", placeholder="Ваш телефон").input
+                  input(type="text", placeholder="Ваш Email").input
+                  button(type="submit").btn Оставить заявку      
   include ../includes/footer
 
