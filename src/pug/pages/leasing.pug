@@ -72,7 +72,7 @@ html(lang="en")
               li
                 a(href="#sr4").scroll-to Наши партнеры
           .section-right.section-right--full
-            .section-margin.display-flex-tablets
+            .section-margin.display-none-tablets
               form.form-calc.form-calc--leasing
                 .form-calc__content
                   h3.item-title.item-title--no-style.item-title--size-26px#sr1 Расчет условий лизинга
@@ -157,9 +157,14 @@ html(lang="en")
                   +image('icons/engineer.png', 'info__item-img')
                 .info__item-desc
                   p 48 лицинзированных партнеров
+            form.section.leasing__info.display-flex-tablets
+              h3.item-title.item-title--no-style.item-title--center РАСЧЕТ УСЛОВИЙ ЛИЗИНГА ОНЛАЙН
+              .leasing__info-text Расчет является примерным, точная сумма ежемесячного платежа, рассчитывается при формированнии коммерческого предложения менеджером
+              button.btn Оставить заявку
             .section-margin#sr2
-              h3.item-title.item-title--no-style.item-title--size-26px ПОЧЕМУ У НАШИХ КЛИЕНТОВ
-              h3.item-title.item-title--size-26px УСЛОВИЯ ПО ЛИЗИНГУ ВЫГОДНЕЕ?
+              .item-title-box
+                h3.item-title.item-title--no-style.item-title--size-26px ПОЧЕМУ У НАШИХ КЛИЕНТОВ
+                h3.item-title.item-title--size-26px УСЛОВИЯ ПО ЛИЗИНГУ ВЫГОДНЕЕ?
               ul.list-red-cub
                 li(data-index="1") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, deserunt nemo ratione sit facere iusto hic inventore recusandae! Cumque aspernatur commodi possimus nulla voluptatem incidunt eum id rem itaque saepe.
                 li(data-index="2") Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus repellendus, tempora, provident cum assumenda velit nobis optio sunt expedita voluptatibus ratione nulla nemo impedit sed ex ullam. Esse, voluptates necessitatibus.
@@ -169,7 +174,7 @@ html(lang="en")
             .section-margin#sr3
               h3.item-title.item-title--size-26px УСЛОВИЯ ЛИЗИНГА
               .leasing__terms
-                .lesing__desc
+                .leasing__desc
                   p Рассчитаем платеж по лизингу. Наш специалист сделает расчет сразу в 48 компаниях и подберет самые выгодные условия
                 ul.list-red-cub
                   li(data-index="1") Быстрое оформление и минимум документов. Ставка от 10%
